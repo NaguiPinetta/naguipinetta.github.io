@@ -1,7 +1,7 @@
 ---
 title: Product Management
 layout: post
-post-image: "https://onfire.craftwork.design/images/s-4-img-2.png"
+post-image: "https://i.ibb.co/9p7XPrg/teste.png" 
 description: Crafting roadmaps for uncharted solutions
 tags:
 - jekyll
