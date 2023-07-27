@@ -76,7 +76,6 @@ To create a section for each store’s router password on **LastPass**:
     ![createnew2](/assets/images/images-changingpasswords-createnew2.png)
 
 ## Accessing a Server
-
 1. List the existing servers by running: <br>
 `tsh ls` <br>
 
