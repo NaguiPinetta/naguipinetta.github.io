@@ -28,6 +28,7 @@ The company (let's call it _DoxHut_) was performing **PoCs** and running tests d
 The challenge, however, was the team available to cover eventual incidents. Since we were **dealing with hardware**, on-site analysis was often inevitable. The team was mainly constituted of two levels: 
 - **SREs**, in charge of controlling the servers' stability and, among other things, running a second level of analysis, usually requested by the Field Technicians, once they run the first instance of analysis and got confirmation on the issue not being related to the hardware installation's status. <br>
 - **Field Technicians**, mostly constituted by interns, most of them part-time, and distributed across the country so that in-situ assistance was feasible. <br>
+<br>
 As soon as I learned what they did and how they did it, I noticed most of the incidents were time-sensitive, and the two instances of analysis had to occur swiftly and efficiently. To contribute to this cause, I interviewed **SMEs** from both sides, gathered all information on common issues and the steps to achieve their resolution, created a rough draft, validated it with them, and published the following **Help Docs page** for **troubleshooting** the issues they faced on a daily basis.
 
 
@@ -46,32 +47,32 @@ This document aims to provide **Field Technicians** with a comprehensive overvie
 
 # Table of Contents
 
-- [In-Store Monitoring Service](#in-store-monitoring-service)
-  - [Connection Issue](#connection-issue)
-  - [VPN is Down](#vpn-is-down)
-- [NAS](#nas)
-  - [NAS is Full](#nas-is-full)
-  - [NAS Disconnected](#nas-disconnected)
-  - [NAS Disk Broken](#nas-disk-broken)
-- [Router](#router)
-  - [Router is Broken](#router-is-broken)
-  - [K3s Stopped](#k3s-stopped)
-  - [LTE/Dongle Issue](#ltedongle-issue)
-- [Server](#server)
-  - [Internal Disk Full](#internal-disk-full)
-  - [Excessive CPU Use Alert](#excessive-cpu-use-alert)
-  - [High-Temperature Alarm](#high-temperature-alarm)
-  - ["The Box is Disconnected" Message](#the-box-is-disconnected-message)
-  - [Server not Recording](#server-not-recording)
-  - [NAS is not Mounted](#nas-is-not-mounted)
-  - [Wrong Time Settings](#wrong-time-settings)
-  - [Excessive RAM Use](#excessive-ram-use)
-- [Smart Power Supply](#smart-power-supply)
-  - [Power Switch Unreachable (Not Shown/ No Message)](#power-switch-unreachable-not-shown-no-message)
-  - [Outlets are Blocked (No Message)](#outlets-are-blocked-no-message)
-- [Switch](#switch)
-  - [Switch is Off](#switch-is-off)
-  - [Server Issue / Server is Off](#server-issue--server-is-off)
+- [In-Store Monitoring Service](##in-store-monitoring-service)
+  - [Connection Issue](###connection-issue)
+  - [VPN is Down](###vpn-is-down)
+- [NAS](##nas)
+  - [NAS is Full](###nas-is-full)
+  - [NAS Disconnected](###nas-disconnected)
+  - [NAS Disk Broken](###nas-disk-broken)
+- [Router](##router)
+  - [Router is Broken](###router-is-broken)
+  - [K3s Stopped](###k3s-stopped)
+  - [LTE/Dongle Issue](###ltedongle-issue)
+- [Server](##server)
+  - [Internal Disk Full](###internal-disk-full)
+  - [Excessive CPU Use Alert](###excessive-cpu-use-alert)
+  - [High-Temperature Alarm](###high-temperature-alarm)
+  - ["The Box is Disconnected" Message](###the-box-is-disconnected-message)
+  - [Server not Recording](###server-not-recording)
+  - [NAS is not Mounted](###nas-is-not-mounted)
+  - [Wrong Time Settings](###wrong-time-settings)
+  - [Excessive RAM Use](###excessive-ram-use)
+- [Smart Power Supply](##smart-power-supply)
+  - [Power Switch Unreachable (Not Shown/ No Message)](###power-switch-unreachable-not-shown-no-message)
+  - [Outlets are Blocked (No Message)](###outlets-are-blocked-no-message)
+- [Switch](##switch)
+  - [Switch is Off](###switch-is-off)
+  - [Server Issue / Server is Off](###server-issue--server-is-off)
 
 ## In-Store Monitoring Service
 ### Connection Issue
