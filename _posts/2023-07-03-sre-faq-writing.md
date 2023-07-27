@@ -39,7 +39,6 @@ Welcome to the neatly organized section for common **DevOps SREs** requests! Her
 <br>
 
 ### On this Page
-
 - [How To](#how-to)
 - [Useful External Documentation](#useful-external-documentation)
 - [Useful Tools](#useful-tools)
@@ -60,6 +59,7 @@ sudo gpasswd -a <user> docker    # Add the user to the 'docker' group for Docker
 ```bash
 sudo adduser <user> && sudo usermod -aG docker <user>
 ```
+<br>
 > 💡 While the one-liner sets up the user with sudo and **Docker** access, it does not grant explicit passwordless sudo permissions. If you want to provide passwordless sudo access, you'll need to modify the sudoers file accordingly. However, please exercise caution when granting passwordless sudo access, and only do so for trusted users. Security should always be a top priority!
 <br>
 
@@ -71,12 +71,10 @@ ssh-keygen -t ed25519 -C "<name>@doxhut.xyz"
 ```
 
 - Replace `name` with your desired identifier, email, or any other information you wish to associate with the key. This command will create an `Ed25519` SSH key pair, consisting of a private key (`id_ed25519`) and a public key (`id_ed25519.pub`). The public key can be shared with remote servers or services you want to authenticate with.
-
+<br>
 > 💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
 
-
 ### TLDR Command to Delete a User:
-
 The `userdel` command is used to remove a user account or remove a user from a group in **Linux** systems. Please note that all commands must be executed as root.
 
 For more information about `userdel`, refer to the [manual page](https://manned.org/userdel).
@@ -105,6 +103,7 @@ userdel [name] [group]
 ```bash
 userdel --root [path/to/other/root] [name]
 ```
+<br>
 > 💡 Remember to replace [name], [group], and [path/to/other/root] with the actual username, group name, and path to the other root directory, respectively. Always exercise caution when using this command as it can result in the irreversible deletion of user data.
 <br>
 
@@ -202,7 +201,7 @@ ps -o ppid= -p pid
 ```bash
 ps --sort size
 ```
-
+<br>
 > 🧷  More information about the ps command can be found [here](https://manned.org/ps).
 <br>
 
@@ -259,13 +258,11 @@ kill -17|STOP process_id
 ```bash
 kill -SIGUSR1 -group_id
 ```
-
+<br>
 > 🧷  More information about the `kill`command can be foun [here](kill - manned.org). 
 <br>
-
 > ⚠️ **Caution:** These commands are sensitive and can lead to issues. Killing a process might affect someone else's work. Please use these commands with care and consideration.
 <br>
-
 
 ### How to Create S3 Buckets
 Follow the guidelines included in this [repo](https://git.agot.ai/users/sign_in).
