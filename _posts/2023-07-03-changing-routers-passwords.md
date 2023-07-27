@@ -21,7 +21,7 @@ tags:
   gtag('config', 'G-J0NKP19PLY');
 </script>
 
-# Changing Routers Passwords on Teleport
+# Changing a Router's Password on Teleport
 
 ![intro](/assets/images/images-changingpasswords-intro.png)
 
@@ -104,10 +104,10 @@ To set an **SREs SSH RSA key** in the router:<br>
 2. List all directories:<br>
 `ls -hal`
 
-3. Open .ssh<br>
+3. Open .ssh:<br>
 `cd .ssh`
 
-4. Then, edit the authorized keys<br>
+4. Then, edit the authorized keys:<br>
 `vim authorized_keys`
 
 5. Once on the **Vim editor**, press **“i”** to activate the editor mode.<br>
@@ -122,7 +122,7 @@ To set an **SREs SSH RSA key** in the router:<br>
 
 10. Repeat the process for key you must insert in the file.<br>
 
-11. Finally, make sure you are not in the editor mode, and press **“:wq”** to save changes and quit. <br>
+11. Finally, make sure you are not in the editor mode, and type **“:wq”** to save changes and quit. <br>
 
 ## Bonus: Setting Server’s Time
 
