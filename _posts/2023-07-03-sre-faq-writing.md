@@ -1,7 +1,7 @@
 ---
 title: SREs FAQ
 layout: post
-post-image: "https://onfire.craftwork.design/images/s-5-img-2.png"
+post-image: "https://i.ibb.co/2yDYGJz/fatal-error.png"
 description: Putting out fires with docs since 2017
 tags:
 - FAQ
