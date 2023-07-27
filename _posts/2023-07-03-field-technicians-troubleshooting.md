@@ -44,8 +44,6 @@ This document aims to provide **Field Technicians** with a comprehensive overvie
 
 ### On this Page
 
-# Table of Contents
-
 - [In-Store Monitoring Service](##in-store-monitoring-service)
 - [NAS](##nas)
 - [Router](##router)
