@@ -1,5 +1,5 @@
 ---
-title: Technical Writing
+title: SREs FAQ
 layout: post
 post-image: "https://onfire.craftwork.design/images/s-5-img-2.png"
 description: Putting out fires with docs since 2017
