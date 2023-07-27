@@ -144,6 +144,8 @@ root@dev-office-inference-0:/home/agot# k3scli.sh -h
         -g Setup GPU sharing
         -a Install AWS CLI
 ```
+<br>
+
 ##### Reinstall Everything:
 - To perform a complete reinstallation, including k3s, GPU splitting setup, and deploying Rabbit, simply execute the following command:
 
