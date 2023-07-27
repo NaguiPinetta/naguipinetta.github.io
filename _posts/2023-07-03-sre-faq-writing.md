@@ -71,6 +71,7 @@ ssh-keygen -t ed25519 -C "<name>@doxhut.xyz"
 ```
 
 - Replace `name` with your desired identifier, email, or any other information you wish to associate with the key. This command will create an `Ed25519` SSH key pair, consisting of a private key (`id_ed25519`) and a public key (`id_ed25519.pub`). The public key can be shared with remote servers or services you want to authenticate with.
+
 <br>
 > 💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
 
@@ -263,6 +264,7 @@ kill -SIGUSR1 -group_id
 <br>
 > 🧷  More information about the `kill`command can be foun [here](kill - manned.org). 
 <br>
+
 > ⚠️ **Caution:** These commands are sensitive and can lead to issues. Killing a process might affect someone else's work. Please use these commands with care and consideration.
 <br>
 
