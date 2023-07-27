@@ -21,10 +21,6 @@ tags:
   gtag('config', 'G-J0NKP19PLY');
 </script>
 
-# Field Technicians Troubleshooting
-
-![intro](/assets/images/images-changingpasswords-intro.png)
-
 ## Use Case
 
 The company (let's call it _DoxHut_) was performing **PoCs** and running tests directly on what we can call a production environment. The software solution was implemented on a piece of software running on devices already established within the customer's facilities. Although it was _code_ injected in an application, it required various pieces of hardware installation and frequent maintenance. <br>
@@ -47,6 +43,8 @@ This document aims to provide **Field Technicians** with a comprehensive overvie
 > 📡 Is there anything missing? Reach out to our **Tech Writer** via Slack.
 
 ### On this Page
+
+# Table of Contents
 
 - [In-Store Monitoring Service](#in-store-monitoring-service)
   - [Connection Issue](#connection-issue)
@@ -74,7 +72,6 @@ This document aims to provide **Field Technicians** with a comprehensive overvie
 - [Switch](#switch)
   - [Switch is Off](#switch-is-off)
   - [Server Issue / Server is Off](#server-issue--server-is-off)
-
 
 ## In-Store Monitoring Service
 ### Connection Issue
