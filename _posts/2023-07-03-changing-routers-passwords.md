@@ -82,7 +82,7 @@ To create a section for each store’s router password on **LastPass**:
 
    You will see all servers listed as shown next 
    
-   ![console-servers]("https://i.ibb.co/GM99XBq/images-console-servers.png")
+   [console-servers]("https://i.ibb.co/GM99XBq/images-console-servers.png")
 
 2. Select a server and access it:<br>
 `tsh ssh doxhut@doxhut-2-xavier-0` (example)
