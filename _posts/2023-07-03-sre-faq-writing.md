@@ -315,7 +315,6 @@ includedir /etc/sudoers.d
 ```bash
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMOmhXTjtS4Tehalzfyn6KwPU0CwYpCSRuv2+P/bZrrc user for automation
 ```
-<br>
 - You can copy and paste each step into your Markdown file or text editor. The code snippets are formatted as code blocks for better visibility and clarity.
 
 ## Useful External Documentation
