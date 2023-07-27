@@ -23,7 +23,7 @@ tags:
 
 # Changing Routers Passwords on Teleport
 
-![intro]("https://i.ibb.co/QbXQMZv/images-changingpasswords-intro.png")
+![intro](/_site/assets/images/images-changingpasswords-intro.png)
 
 ## On this Page:
 
@@ -57,7 +57,7 @@ To create a section for each store’s router password on **LastPass**:
 
 2. Create a **New Item** by clicking the plus icon located at the bottom right corner. This action will open a modal where you must fill in a few fields. <br>
 
-    ![createnew]("https://i.ibb.co/xmc29mJ/images-changingpasswords-createnew.png")<br>
+    ![createnew](/_site/assets/images/images-changingpasswords-createnew.png)<br>
 
 3. Fill in the **Name** field with the server’s name.<br>
 
@@ -73,7 +73,7 @@ To create a section for each store’s router password on **LastPass**:
 
 9. Repeat the whole process for each of the servers listed below.<br>
 
-    ![createnew2]("https://i.ibb.co/7rF8Cz1/images-changingpasswords-createnew2.png")
+    ![createnew2](/_site/assets/images/images-changingpasswords-createnew2.png)
 
 ## Accessing a Server
 
@@ -82,7 +82,7 @@ To create a section for each store’s router password on **LastPass**:
 
    You will see all servers listed as shown next 
    
-   <img src="https://i.ibb.co/GM99XBq/images-console-servers.png" alt="images-console-servers" border="0">
+   ![console-servers](/_site/assets/images/images-console-servers.png)
 
 2. Select a server and access it:<br>
 `tsh ssh doxhut@doxhut-2-xavier-0` (example)
