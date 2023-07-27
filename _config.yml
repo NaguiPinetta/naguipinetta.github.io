@@ -38,16 +38,16 @@ spotify_username:
 google-analytics: G-J0NKP19PLY
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname: naguipinetta
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Nagui Pinetta
 # URL for the Image of the Author
 author-image: https://i.ibb.co/6tMw1d6/images-prof-pic.png
 # 60 Words About the Author
 author-about: As an experienced technical writer with over six years in the field, I bring a wealth of expertise to the table. Originally from Argentina and currently located in Germany, I have worked extensively in the industry, with a diverse range of technical writing samples in my portfolio. From online help systems to knowledge bases, I have created various materials throughout my career. This page offers an overview of my recent technical writing projects, showcasing samples specifically tailored for this website. Feel free to explore the links to view the samples and get a glimpse of my work.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-url: https://github.com/NaguiPinetta
 
 # SASS
 sass:
