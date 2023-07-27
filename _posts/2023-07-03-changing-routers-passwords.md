@@ -23,7 +23,7 @@ tags:
 
 # Changing Routers Passwords on Teleport
 
-![intro](images-changingpasswords-createnew.png)
+![intro](_includes\images-changingpasswords-intro.png)
 
 ## On this Page:
 
@@ -57,7 +57,7 @@ To create a section for each store’s router password on **LastPass**:
 
 2. Create a **New Item** by clicking the plus icon located at the bottom right corner. This action will open a modal where you must fill in a few fields. <br>
 
-![createnew](images-changingpasswords-createnew.png)<br>
+    ![createnew](_includes\images-changingpasswords-createnew.png))<br>
 
 3. Fill in the **Name** field with the server’s name.<br>
 
@@ -73,30 +73,24 @@ To create a section for each store’s router password on **LastPass**:
 
 9. Repeat the whole process for each of the servers listed below.<br>
 
-![createnew2](images-changingpasswords-createnew2.png)
+    ![createnew2](_includes\images-changingpasswords-createnew2.png)
 
 ## Accessing a Server
 
-To access a server:
-
 1. List the existing servers by running: <br>
-
 `tsh ls` <br>
 
-You will see all servers listed as shown next 
+   You will see all servers listed as shown next 
    
-![servers](images-console-servers.png)
+   ![servers](_includes\images-console-servers.png)
 
 2. Select a server and access it:<br>
-
 `tsh ssh doxhut@doxhut-2-xavier-0` (example)
 
 3. Then, access the router:<br>
-
 `ssh root@192.168.1.1`
 
 4. Once in the router, change its password by running:<br>
-
 `passwd`
 
 5. You will get a confirmation message and that’s it!<br>
@@ -106,19 +100,15 @@ You will see all servers listed as shown next
 To set an **SREs SSH RSA key** in the router:<br>
 
 1. Run:<br>
-
 `cd /root`
 
 2. List all directories:<br>
-
 `ls -hal`
 
 3. Open .ssh<br>
-
 `cd .ssh`
 
 4. Then, edit the authorized keys<br>
-
 `vim authorized_keys`
 
 5. Once on the **Vim editor**, press **“i”** to activate the editor mode.<br>
