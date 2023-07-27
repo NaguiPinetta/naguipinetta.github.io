@@ -4,9 +4,13 @@ layout: post
 post-image: "https://onfire.craftwork.design/images/s-5-img-2.png"
 description: Putting out fires with docs since 2017
 tags:
-- jekyll
-- informative
-- technology
+- FAQ
+- SRE Guides
+- Support Docs
+- Knowledge Base
+- Help Docs
+- Technical Writing
+- English
 ---
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NKP19PLY"></script>
