@@ -20,8 +20,6 @@ tags:
 <br>
 <br>
 
-> 🛠 This page is currently undergoing maintenance. We apologize for any inconvenience caused. The content will be made available soon. Thank you for your patience.
-
 ## Use Case
 
 At the company, let's call it "DoxHut," they were running **PoCs** (Proof of Concepts) directly on production. The software solution was implemented on devices already established within the customer's facilities. Although it was code injected into an application, it required various hardware installations and frequent maintenance.
@@ -42,9 +40,9 @@ Welcome to the neatly organized section for common **DevOps SREs** requests! Her
 
 ### On this Page
 
-- [How To](##how-to)
-- [Useful Documentation](##useful-external-documentation)
-- [Useful Tools](##useful-tools)
+- [How To](#how-to)
+- [Useful External Documentation](#useful-external-documentation)
+- [Useful Tools](#useful-tools)
 
 
 ## How To
@@ -62,7 +60,6 @@ sudo gpasswd -a <user> docker    # Add the user to the 'docker' group for Docker
 ```bash
 sudo adduser <user> && sudo usermod -aG docker <user>
 ```
-
 > 💡 While the one-liner sets up the user with sudo and **Docker** access, it does not grant explicit passwordless sudo permissions. If you want to provide passwordless sudo access, you'll need to modify the sudoers file accordingly. However, please exercise caution when granting passwordless sudo access, and only do so for trusted users. Security should always be a top priority!
 <br>
 
@@ -108,7 +105,6 @@ userdel [name] [group]
 ```bash
 userdel --root [path/to/other/root] [name]
 ```
-
 > 💡 Remember to replace [name], [group], and [path/to/other/root] with the actual username, group name, and path to the other root directory, respectively. Always exercise caution when using this command as it can result in the irreversible deletion of user data.
 <br>
 
@@ -209,7 +205,7 @@ ps --sort size
 
 > 🧷  More information about the ps command can be found [here](https://manned.org/ps).
 <br>
-  
+
 #### Kill Command - Terminate a Process:
 The <kill> command sends a signal to a process, usually to stop it. Choose the appropriate command based on your scenario:
 <br>
@@ -310,7 +306,6 @@ root    ALL=(ALL:ALL) ALL
 See sudoers(5) for more information on "#include" directives:
 includedir /etc/sudoers.d
 ```
-
 - Add the SSH public key to the `authorized_keys` file for the new user.
 
 ```bash
