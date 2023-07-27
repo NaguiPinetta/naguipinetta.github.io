@@ -96,7 +96,6 @@ To create a section for each store’s router password on **LastPass**:
 5. You will get a confirmation message and that’s it!<br>
 
 ## Setting SREs SSH RSA Keys
-
 To set an **SREs SSH RSA key** in the router:<br>
 
 1. Run:<br>
