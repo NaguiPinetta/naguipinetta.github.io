@@ -22,7 +22,7 @@ tags:
   gtag('config', 'G-J0NKP19PLY');
 </script>
 
-## Use Case (and Background) <br>
+## Use Case <br>
 
 🥑 I worked for this American company that developed a cutting-edge **Computer Vision and AI model** for recognizing patterns within fast-food chains' kitchens to predict and prevent issues, thus improving processes and quality while cutting expenses. They caught the eyes of industry titans such as **McDonalds**, **KFC**, and **Taco Bell**. Back then, their business model appeared solid, and their team was constituted of at most sixty people, from devs to field technicians. <br>
 
