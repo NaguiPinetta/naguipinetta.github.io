@@ -4,12 +4,9 @@ layout: post
 post-image: "https://i.ibb.co/R2gh6Jb/falling-fire.png"
 description: Putting out fires with docs since 2017
 tags:
-- FAQ
-- SRE Guides
-- Support Docs
+- Project Docs
 - Knowledge Base
-- Help Docs
-- Technical Writing
+- Customer Success
 - English
 ---
 <!-- Google tag (gtag.js) -->
