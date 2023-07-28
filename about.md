@@ -17,26 +17,27 @@ I believe in delivering results that make a real impact, and my track record wit
 
 I have developed expertise in several key areas, allowing me to contribute effectively and deliver meaningful outcomes. Here are the areas where I bring my skills and knowledge:
 
-**Technical Writing** 
-**User Experience (UX)** 
-**UX Writing** 
-**Copywriting / Review** 
-**Product Management**
-**Product Ownership** 
-**Business Analysis**
-**Translation** 
-**UI Translation / Software Localization**
+**Technical Writing** <br>
+**User Experience (UX)**  <br>
+**UX Writing**  <br>
+**Copywriting / Review**  <br>
+**Product Management** <br>
+**Product Ownership**  <br>
+**Business Analysis** <br>
+**Translation**  <br>
+**UI Translation / Software Localization** <br>
 
 These areas of expertise have allowed me to contribute to the success of various projects, and I am eager to bring my skills to new challenges and make a positive impact.
 
 ## Knowledge, Experience, Tools and Technologies I've work with
+
 
 <style>
 .tag {
   display: inline-block;
   padding: 4px 8px;
   border-radius: 4px;
-  color: #ffffff;
+  color: #ffffff !important; /* White color */
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
@@ -133,12 +134,8 @@ These areas of expertise have allowed me to contribute to the success of various
 <span class="tag" style="background-color: #fd7e14;">Speech Studio</span>
 <span class="tag" style="background-color: #20c997;"> Sharepoint </span>
 <span class="tag" style="background-color: #afeeee;"> Wireframes </span>
-
-## Samples & Templates
-
-⚠️ Please, be aware this portfolio is still under construction. After neverending searches for the right tool to cast my docs samples, I came up with a different approach using GitPages. It's been a fantastic ride so far, full of new learning and challenges, but of course, there's still a lot of room for improvement. Feel free to take a look at its content. I apologize in advance for any inconsistencies whatsoever.
-<br>
-
+ <br>
+ 
 ## Contact Information
 Be welcome to reach out through [Linkedin](https://www.linkedin.com/in/jonathan-demian-pinetta/).
 <br>
