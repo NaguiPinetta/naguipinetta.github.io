@@ -21,10 +21,6 @@ tags:
 
   gtag('config', 'G-J0NKP19PLY');
 </script>
-<br>
-<br>
-<br>
-
 
 ## Use Case
 
@@ -33,7 +29,6 @@ At the company, let's call it "DoxHut," they were running **PoCs** (Proof of Con
 However, they faced a challenge when it came to handling incidents. The senior **SREs** (Site Reliability Engineers) had a lot on their plates, leading them to onboard new team members, mainly juniors. The newcomers needed proper guidance on their day-to-day tasks, which sometimes meant the more experienced colleagues had to pause their work to assist them with "**basic stuff**."
 
 When I took on the **tech writer** position, I had the opportunity to get to know each team better. During interviews, I asked them about their pain points. It turned out that they had always wanted to create an **FAQ** for newcomers, but they never had the chance to do so. Gathering testimonies and data, I created a page in our knowledge base with frequently asked questions. After reviewing and publishing it, I shared the page with the team. This sparked discussions, leading to additional items to include, which I promptly addressed in the periodic updates I had planned for this documentation piece.
-
 
 ## SRE FAQ
 
@@ -78,7 +73,9 @@ ssh-keygen -t ed25519 -C "<name>@doxhut.xyz"
 
 - Replace `name` with your desired identifier, email, or any other information you wish to associate with the key. This command will create an `Ed25519` SSH key pair, consisting of a private key (`id_ed25519`) and a public key (`id_ed25519.pub`). The public key can be shared with remote servers or services you want to authenticate with.
 <br>
-> 💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
+
+
+💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
 
 ### TLDR Command to Delete a User:
 The `userdel` command is used to remove a user account or remove a user from a group in **Linux** systems. Please note that all commands must be executed as root.
