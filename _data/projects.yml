@@ -6,11 +6,11 @@
   link: https://greenmile.com/greenmile-live/
   image: https://i.ibb.co/pf2HxsV/live.png
   description: Combining route plan information with real-time actual-versus-plan data from mobile and telematics devices, GreenMile Live helps your company increase visibility, improve driver performance and reduce the cost of your mobile resources.
-- name: myOrder
+- name: GreenMile myOrder
   link: https://greenmile.com/greenmile-trackmyorder/
   image: https://i.ibb.co/qnCR0WW/myorder.png
   description: With the myOrder app, your customers can access information about their orders and get real-time alerts/texts about their order status and delivery ETAs. myOrder app will help you provide superb customer service to your customers and increase the performance of your delivery team. It also allows your customers to evaluate your delivery team's performance and provides you with valuable feedback.
-- name: Translation Resources Portal
+- name: GreenMile I18n
   link: https://portal.greenmile.com/login
   image: https://i.ibb.co/BwL7XTQ/portal.png
   description: A powerful web-based tool designed to facilitate the translation and review of user interface content in multiple languages for setting up GreenMile Software solutions.
