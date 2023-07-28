@@ -1,7 +1,7 @@
 ---
 title: Help Desk Project
 layout: post
-post-image: "https://i.ibb.co/2yDYGJz/fatal-error.png"
+post-image: "https://i.ibb.co/R2gh6Jb/falling-fire.png"
 description: Putting out fires with docs since 2017
 tags:
 - FAQ
@@ -68,7 +68,8 @@ Currently, there is no 1st or 2nd level Support at DoxHut that we can provide to
 - FreshDesk Implementation Blueprint
 - FreshDesk Documentation
 - Helpdesk - Customer Portal
-
+<br>
+<br>
 > This document was last updated on **04/23/2022** by **Nagui Pinetta**.
 
 [Back to Home Page](/)
