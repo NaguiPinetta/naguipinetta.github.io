@@ -11,6 +11,9 @@ tags:
 - Technical Writing
 - English
 ---
+
+# Changing a Router's Password on Teleport
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NKP19PLY"></script>
 <script>
@@ -20,9 +23,6 @@ tags:
 
   gtag('config', 'G-J0NKP19PLY');
 </script>
-
-
-Changing a Router's Password on Teleport
 
 ![intro](/assets/images/images-changingpasswords-intro.png)
 
