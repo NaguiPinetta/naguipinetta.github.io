@@ -22,7 +22,7 @@ tags:
 </script>
 
 
-# Changing a Router's Password on Teleport
+Changing a Router's Password on Teleport
 
 ![intro](/assets/images/images-changingpasswords-intro.png)
 
