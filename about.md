@@ -17,15 +17,15 @@ I believe in delivering results that make a real impact, and my track record wit
 
 I have developed expertise in several key areas, allowing me to contribute effectively and deliver meaningful outcomes. Here are the areas where I bring my skills and knowledge:
 
-- **Technical Writing** 
-- **User Experience (UX)** 
-- **UX Writing** 
-- **Copywriting / Review** 
-- **Product Management**
-- **Product Ownership** 
-- **Business Analysis**
-- **Translation** 
-- **UI Translation / Software Localization**
+**Technical Writing** 
+**User Experience (UX)** 
+**UX Writing** 
+**Copywriting / Review** 
+**Product Management**
+**Product Ownership** 
+**Business Analysis**
+**Translation** 
+**UI Translation / Software Localization**
 
 These areas of expertise have allowed me to contribute to the success of various projects, and I am eager to bring my skills to new challenges and make a positive impact.
 
@@ -36,7 +36,7 @@ These areas of expertise have allowed me to contribute to the success of various
   display: inline-block;
   padding: 4px 8px;
   border-radius: 4px;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
@@ -137,15 +137,10 @@ These areas of expertise have allowed me to contribute to the success of various
 ## Samples & Templates
 
 ⚠️ Please, be aware this portfolio is still under construction. After neverending searches for the right tool to cast my docs samples, I came up with a different approach using GitPages. It's been a fantastic ride so far, full of new learning and challenges, but of course, there's still a lot of room for improvement. Feel free to take a look at its content. I apologize in advance for any inconsistencies whatsoever.
-
-- [SRE FAQ - Sample](pages-field-sre-faq.md)
-- [Project Docs - Sample](pages-docsample01deskproject.md)
-- [Guides - Sample](pages-userguide-routers-teleport.md)
-- [Troubleshooting - Sample](pages-field-technicians-troubleshooting.md)
-- [Templates](pages-templates-templates-home.md)
-
+<br>
 
 ## Contact Information
 Be welcome to reach out through [Linkedin](https://www.linkedin.com/in/jonathan-demian-pinetta/).
+<br>
 
 [Back to Home Page](/)
