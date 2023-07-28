@@ -9,15 +9,6 @@ tags:
 - Customer Success
 - English
 ---
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NKP19PLY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J0NKP19PLY');
-</script>
 
 ## Use Case <br>
 
@@ -27,6 +18,16 @@ tags:
 
 🚀 Lucky me, I had already been in a company that went through a similar situation. This allowed me to come up with a solution. I designed an **Incident Management Process** layout for their **Support Agents**, to implement in conjunction with a **Help Desk Solution** where their Customers could report issues and request assistance, and a series of **FAQ** inputs and **Help Articles** for their Field Technicians to consult. The following document was intended to be the project's specification cover, which I used as a cue for my presentation.
 <br>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NKP19PLY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J0NKP19PLY');
+</script>
 
 # DoxHut's HelpDesk Project
 
