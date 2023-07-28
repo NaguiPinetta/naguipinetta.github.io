@@ -36,11 +36,11 @@ tags:
 ![intro](/assets/images/images-projectdesk-intro.png)
 
 ## In this Document
-- Problem Statement
-- Scope
-- Timeline
-- Milestones and deadlines
-- Reference materials
+- [Problem Statement](#problem-statement)
+- [Scope](#scope)
+- [Timeline](#timeline)
+- [Milestones and deadlines](#milestones-and-deadlines)
+- [Reference materials](#reference-material)
 
 ## Project Info
 
