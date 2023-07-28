@@ -71,6 +71,5 @@ Currently, there is no 1st or 2nd level Support at DoxHut that we can provide to
 <br>
 <br>
 
-> This document was last updated on **04/23/2022** by **Nagui Pinetta**.
 
 [Back to Home Page](/)
