@@ -71,11 +71,11 @@ sudo adduser <user> && sudo usermod -aG docker <user>
 ssh-keygen -t ed25519 -C "<name>@doxhut.xyz"
 ```
 
-Replace `name` with your desired identifier, email, or any other information you wish to associate with the key. This command will create an `Ed25519` SSH key pair, consisting of a private key (`id_ed25519`) and a public key (`id_ed25519.pub`). The public key can be shared with remote servers or services you want to authenticate with.
+- Replace `name` with your desired identifier, email, or any other information you wish to associate with the key. This command will create an `Ed25519` SSH key pair, consisting of a private key (`id_ed25519`) and a public key (`id_ed25519.pub`). The public key can be shared with remote servers or services you want to authenticate with.
 <br>
 
 
-💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
+>💡 Remember to keep the private key secure and avoid sharing it with others. Security is crucial!
 
 ### TLDR Command to Delete a User:
 The `userdel` command is used to remove a user account or remove a user from a group in **Linux** systems. Please note that all commands must be executed as root.
