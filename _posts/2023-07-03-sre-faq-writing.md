@@ -24,6 +24,7 @@ tags:
 <br>
 <br>
 
+
 ## Use Case
 
 At the company, let's call it "DoxHut," they were running **PoCs** (Proof of Concepts) directly on production. The software solution was implemented on devices already established within the customer's facilities. Although it was code injected into an application, it required various hardware installations and frequent maintenance.

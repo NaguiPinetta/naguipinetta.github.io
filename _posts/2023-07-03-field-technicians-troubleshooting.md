@@ -22,6 +22,7 @@ tags:
   gtag('config', 'G-J0NKP19PLY');
 </script>
 
+
 ## Use Case
 
 The company (let's call it _DoxHut_) was performing **PoCs** and running tests directly on what we can call a production environment. The software solution was implemented on a piece of software running on devices already established within the customer's facilities. Although it was _code_ injected in an application, it required various pieces of hardware installation and frequent maintenance. <br>
