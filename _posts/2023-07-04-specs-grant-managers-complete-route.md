@@ -1,5 +1,5 @@
 ---
-title: Tech Spec / User Story
+title: Tech Specs / User Stories
 layout: post
 post-image: "https://i.ibb.co/L08F6kH/managers.png"
 description: Tailormade microcopy to suit up your apps
