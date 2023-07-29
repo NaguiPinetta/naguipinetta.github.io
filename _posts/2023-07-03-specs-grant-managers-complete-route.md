@@ -35,9 +35,9 @@ tags:
 ![image](/assets/images/grant-manager-intro.png)
 
 ## On this Page
-- [How To](#how-to)
-- [Useful External Documentation](#useful-external-documentation)
-- [Useful Tools](#useful-tools)
+- [Goal](#goal)
+- [Background and Strategic fits](#background-and-strategic-fits)
+- [Useful Tools](#requirements)
 
 ## Goal
 Allow Manager 7 users to execute route actions such as:
