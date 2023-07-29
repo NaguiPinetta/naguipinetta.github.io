@@ -63,8 +63,8 @@ As a Manager user, I would like to be able to access a section on the app where 
 ![image](/assets/images/grant-manager-1.png)
 
 #### Acceptance Criteria
-- Route Actions button must be available on every route's details.
-- When tapping Route Actions button, the user must be redirected to Route Actions screens.
+- **Route Actions** button must be available on every route's details.
+- When tapping **Route Actions** button, the user must be redirected to **Route Actions** screen.
 
 ### 2 - Allow Manager Users to Cancel all Pending Stops and Arrive at the Warehouse
 #### User Story
