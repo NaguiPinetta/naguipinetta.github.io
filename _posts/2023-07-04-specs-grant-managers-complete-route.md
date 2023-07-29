@@ -77,7 +77,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 
 #### Acceptance Criteria
 - When tapping **Route Actions** button, the user must be redirected to **Route Actions** screens.
-- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status, etc).
+- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status).
 - **CONFIRM** button closes the screen and redirects the user to the **Route Detail** screen.
 - **Statu** and **Actions** section must be displayed and reflecting actual route status.
 - If current status is **ROUTE PROGRESS** then **ARRIVE AT DESTINATION** action button must be displayed.
@@ -104,7 +104,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 
 #### Acceptance Criteria
 - When tapping **Route Actions** button, the user must be redirected to **Route Actions** screens.
-- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc). 
+- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status). 
 - **CONFIRM** button closes the screen and redirects the user to the **Route Detail** screen.
 - **Status** and **Actions** section must be displayed and reflecting actual route status.
 - If current status is **ROUTE-NOT-STARTED** then **START ROUTE** action button must be displayed.
@@ -126,7 +126,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 
 #### Acceptance Criteria
 - When tapping **Route Actions** button, the user must be redirected to **Route Actions** screens.
-- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc).
+- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status).
 - **CONFIRM** button closes the screen and redirects the user to the **Route Detail** screen.
 - **Status** and **Actions** section must be displayed and reflecting actual route status.
 - If current status is **ROUTE IN PROGRESS** then **ARRIVE AT DESTINATION** action button must be displayed.
@@ -153,7 +153,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 
 #### Acceptance Criteria
 - When tapping **Route Actions** button, the user must be redirected to **Route Actions** screen.
-- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc)
+- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status)
 - **CONFIRM** button closes the screen and redirects the user to the **Route Detail** screen.
 - **Status** and **Actions** section must be displayed and reflecting actual route status.
 - If current status is **EQUIPMENT AT DESTINATION** then **COMPLETE ROUTE** action button must be displayed.
