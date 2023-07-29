@@ -76,7 +76,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 ![image](/assets/images/grant-manager-4.png)
 
 #### Acceptance Criteria
-- When tapping Route Actions button, the user must be redirected to **Route Actions** screens.
+- When tapping **Route Actions** button, the user must be redirected to **Route Actions** screens.
 - Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status, etc).
 - **CONFIRM** button closes the screen and redirects the user to the **Route Detail** screen.
 - **Statu** and **Actions** section must be displayed and reflecting actual route status.
