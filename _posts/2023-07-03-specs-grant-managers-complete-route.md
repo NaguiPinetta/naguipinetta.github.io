@@ -32,7 +32,7 @@ tags:
 
 # Grant Managers Ability to Complete Routes
 
-![image](/assets/images/grant-manager-intro.png)
+![intro](/assets/images/grant-manager-1.png)
 
 ## On this Page
 - [Goal](#goal)
