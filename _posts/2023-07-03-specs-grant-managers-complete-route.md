@@ -4,11 +4,10 @@ layout: post
 post-image: "https://i.ibb.co/L08F6kH/managers.png"
 description: Tailormade microcopy to suit up your apps
 tags:
-- FAQ
-- SRE Guides
-- Support Docs
-- Knowledge Base
-- Help Docs
+- Tech Specs
+- UX Design
+- UX Writing
+- Product Management
 - Technical Writing
 - English
 ---
