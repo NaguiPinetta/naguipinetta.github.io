@@ -66,14 +66,41 @@ As a Manager user, I would like to be able to access a section on the app where 
 - Route Actions button must be available on every route's details.
 - When tapping Route Actions button, the user must be redirected to Route Actions screens.
 
-### 2# - Allow Manager Users to Depart from Origin
+### 2# - Allow Manager Users to Cancel all Pending Stops and Arrive at the Warehouse
 #### User Story
-- As a Manager user, I would like to be able to execute Depart from Origin action on any route from my list.
+- As a Manager user, I would like to be able to execute Arrive at the Warehouse action on any route from my list.
 
 #### Prototype
 ![image](/assets/images/grant-manager-2.png)
 ![image](/assets/images/grant-manager-3.png)
 ![image](/assets/images/grant-manager-4.png)
+
+#### Acceptance Criteria
+- When tapping Route Actions button, the user must be redirected to Route Actions screens.
+- Route data must be displayed on top of the screen for an easier indentification (e.g., Route key, Status, etc).
+- CONFIRM button closes the screen and redirects the user to the route details screen.
+- Status and Actions section must be displayed and reflecting actual route status.
+- If current status is ROUTE PROGRESS then ARRIVE AT DESTINATION action button must be displayed.
+- When tapping ARRIVE AT DESTINATION button, a modal must be displayed for the user input some necessary data:
+- Arrival at destination Date
+- Cancel Reason
+- Cancel
+- Apply
+- If CANCEL, then close action popup.
+- If APPLY, then route status changes to EQUIPMENT AT DESTINATION.
+- If APPLY, then current status will be EQUIPMENT AT DESTINATION, and COMPLETE ROUTE action button must be displayed.
+- SERVER ACTION: In order to make this possible, GMS must authorise GMM7 to user the following endpoints:<br>
+`/Route/{routeID}/Stop/Cancel`
+`/Route/{routeID}/ArriveDestination/NoDriver`
+
+### 3# - Allow Manager Users to Depart from Origin
+#### User Story
+- As a Manager user, I would like to be able to execute Depart from Origin action on any route from my list.
+
+#### Prototype
+![image](/assets/images/grant-manager-5.png)
+![image](/assets/images/grant-manager-6.png)
+![image](/assets/images/grant-manager-7.png)
 
 #### Acceptance Criteria
 - When tapping Route Actions button, the user must be redirected to Route Actions screens.
@@ -88,13 +115,60 @@ As a Manager user, I would like to be able to access a section on the app where 
 - SERVER ACTION: In order to make this possible, GMS must authorise GMM7 to user the following endpoint:<br>
 `/Route/{routeID}/Start`
 
+### 4# - Allow Manager Users to Cancel all Pending Stops and Arrive at the Warehouse
+#### User Story
+- As a Manager user, I would like to be able to execute Arrive at the Warehouse action on any route from my list.
 
+#### Prototype
+![image](/assets/images/grant-manager-8.png)
+![image](/assets/images/grant-manager-9.png)
+![image](/assets/images/grant-manager-10.png)
 
+#### Acceptance Criteria
+- When tapping Route Actions button, the user must be redirected to Route Actions screens.
+- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc).
+- CONFIRM button closes the screen and redirects the user to the route details screen.
+- Status and Actions section must be displayed and reflecting actual route status.
+- If current status is ROUTE PROGRESS then ARRIVE AT DESTINATION action button must be displayed.
+- When tapping ARRIVE AT DESTINATION button, a modal must be displayed for the user input some necessary data:
+- Arrival at destination Date
+- Cancel Reason
+- Cancel
+- Apply
+- If CANCEL, then close action popup.
+- If APPLY, then route status changes to EQUIPMENT AT DESTINATION.
+- If APPLY, then current status will be EQUIPMENT AT DESTINATION, and COMPLETE ROUTE action button must be displayed.
+- SERVER ACTION: In order to make this possible, GMS must authorise GMM7 to user the following endpoints:
+`/Route/{routeID}/Stop/Cancel`
+`/Route/{routeID}/ArriveDestination/NoDriver`
 
+### 5# - Allow Manager Users to Complete a Route
+#### User Story
+- As a Manager user, I would like to be able to execute Complete Route action on any route from my list.
 
+#### Prototype
+![image](/assets/images/grant-manager-11.png)
+![image](/assets/images/grant-manager-12.png)
+![image](/assets/images/grant-manager-13.png)
 
+#### Acceptance Criteria
+- When tapping Route Actions button, the user must be redirected to Route Actions screens.
+- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc)
+- CONFIRM button closes the screen and redirects the user to the route details screen.
+- Status and Actions section must be displayed and reflecting actual route status.
+- If current status is EQUIPMENT AT DESTINATION then COMPLETE ROUTE action button must be displayed.
+- When tapping COMPLETE ROUTE button, a modal must be displayed for the user input some necessary data:
+- Complete Route Date
+- Driver
+- Cancel
+- Apply
+- If CANCEL, then close action popup.
+- If APPLY, then route status changes to ROUTE COMPLETED.
+- SERVER ACTION: In order to make this possible, GMS must authorise GMM7 to user the following endpoint: 
+`/Route/{routeID}/Complete`
 
-
+## User Interaction and Design
+The following details describe user interaction and the specifics of each screen. The images may contain links that lead to the ![interactive prototype](https://xd.adobe.com/view).
 
 
 [Back to Home Page](/)
