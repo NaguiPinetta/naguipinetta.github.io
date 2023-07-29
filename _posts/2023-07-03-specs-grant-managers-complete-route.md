@@ -1,5 +1,5 @@
 ---
-title: Tech Spec - Grant Managers Route Actions
+title: Tech Spec / User Story
 layout: post
 post-image: "https://i.ibb.co/L08F6kH/managers.png"
 description: Tailormade microcopy to suit up your apps
@@ -37,7 +37,7 @@ tags:
 ## On this Page
 - [Goal](#goal)
 - [Background and Strategic fits](#background-and-strategic-fits)
-- [Useful Tools](#requirements)
+- [Requirements](#requirements)
 
 ## Goal
 Allow Manager 7 users to execute route actions such as:
@@ -55,7 +55,7 @@ Allow Manager 7 users to execute route actions such as:
 - Manager 7 users usually see themselves in the need of completing (closing) a route during service. This is due to several reasons, from the driver's GPS signal was lost or simply because they didn´t follow the right procedures.
 
 ## Requirements
-### 1# - Add Route Actions button at Route Details screen
+### 1# - Add Route Actions Button at Route Details screen
 #### User Story
 As a Manager user, I would like to be able to access a section on the app where I can perform route actions available on Live.
 
@@ -65,5 +65,36 @@ As a Manager user, I would like to be able to access a section on the app where 
 #### Acceptance Criteria
 - Route Actions button must be available on every route's details.
 - When tapping Route Actions button, the user must be redirected to Route Actions screens.
+
+### 2# - Allow Manager Users to Depart from Origin
+#### User Story
+- As a Manager user, I would like to be able to execute Depart from Origin action on any route from my list.
+
+#### Prototype
+![image](/assets/images/grant-manager-2.png)
+![image](/assets/images/grant-manager-3.png)
+![image](/assets/images/grant-manager-4.png)
+
+#### Acceptance Criteria
+- When tapping Route Actions button, the user must be redirected to Route Actions screens.
+- Route data must be displayed on top of the screen for an easier indentification (such as Route key, status, etc). 
+- CONFIRM button closes the screen and redirects the user to the route details screen.
+- Status and Actions section must be displayed and reflecting actual route status.
+- If current status is ROUTENOTSTARTED then START ROUTE action button must be displayed.
+- When tapping STARTROUTE button, a modal must be displayed for the user input some necessary data:> Route Start Date> Start Driver Service Time (HOS)> Cancel> Apply.
+- If CANCEL, then close action popup.
+- If APPLY, then route status changes to STARTED.
+- If APPLY, then current status will be EQUIPMENT AT ORIGIN, and DEPART FROM ORIGIN action button must be displayed.
+- SERVER ACTION: In order to make this possible, GMS must authorise GMM7 to user the following endpoint:<br>
+`/Route/{routeID}/Start`
+
+
+
+
+
+
+
+
+
 
 [Back to Home Page](/)
