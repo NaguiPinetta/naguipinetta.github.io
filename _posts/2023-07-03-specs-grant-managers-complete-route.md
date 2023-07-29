@@ -33,7 +33,7 @@ tags:
 
 # Grant Managers Ability to Complete Routes
 
-![intro](/assets/images/grant-manager-intro.png)
+![image](/assets/images/grant-manager-intro.png)
 
 ## On this Page
 - [How To](#how-to)
@@ -41,12 +41,12 @@ tags:
 - [Useful Tools](#useful-tools)
 
 ## Goal
-- Allow Manager 7 users to execute route actions such as:
-  - START ROUTE
-  - DEPART FROM ORIGIN
-  - CANCEL ALL STOPS
-  - ARRIVE AT DESTINATION
-  - COMPLETE ROUTE
+Allow Manager 7 users to execute route actions such as:
+- START ROUTE
+- DEPART FROM ORIGIN
+- CANCEL ALL STOPS
+- ARRIVE AT DESTINATION
+- COMPLETE ROUTE
 
 ## Background and Strategic Fits
 - Manager users usually bump into a very common scenario where routes are not finished by their assigned drivers, and they need to take care of it. In doing so, they must contact a system administrator/dispatcher (Live user) and request them to complete such routes.
@@ -61,7 +61,7 @@ tags:
 As a Manager user, I would like to be able to access a section on the app where I can perform route actions available on Live.
 
 #### Prototype
-![intro](/assets/images/grant-manager-1.png)
+![image](/assets/images/grant-manager-1.png)
 
 #### Acceptance Criteria
 - Route Actions button must be available on every route's details.
