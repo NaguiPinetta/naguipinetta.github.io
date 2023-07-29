@@ -89,7 +89,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 - If **CANCE**, then close action popup.
 - If **APPLY**, then route status changes to **EQUIPMENT AT DESTINATION**.
 - If **APPLY**, then current status will be **EQUIPMENT AT DESTINATION**, and **COMPLETE ROUTE** action button must be displayed.
-- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to user the following endpoints:<br>
+- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to use the following endpoints:<br>
 `/Route/{routeID}/Stop/Cancel`<br>
 `/Route/{routeID}/ArriveDestination/NoDriver`
 
@@ -112,7 +112,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 - If **CANCEL**, then close action popup.
 - If **APPLY**, then route status changes to **STARTED**.
 - If **APPLY**, then current status will be **EQUIPMENT AT ORIGIN**, and **DEPART FROM ORIGIN** action button must be displayed.
-- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to user the following endpoint:<br>
+- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to use the following endpoint:<br>
 `/Route/{routeID}/Start`
 
 ### 4 - Allow Manager Users to Cancel all Pending Stops and Arrive at the Warehouse
@@ -138,7 +138,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 - If **CANCEL**, then close action popup.
 - If **APPLY**, then route status changes to **EQUIPMENT AT DESTINATION**.
 - If **APPLY**, then current status will be **EQUIPMENT AT DESTINATION**, and **COMPLETE ROUTE** action button must be displayed.
-- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to user the following endpoints:<br>
+- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to use the following endpoints:<br>
 `/Route/{routeID}/Stop/Cancel`<br>
 `/Route/{routeID}/ArriveDestination/NoDriver`
 
@@ -164,7 +164,7 @@ As a Manager user, I would like to be able to access a section on the app where 
 - **Apply**
 - If **CANCEL**, then close action popup.
 - If **APPLY**, then route status changes to **ROUTE COMPLETED**.
-- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to user the following endpoint:<br>
+- **SERVER ACTION**: In order to make this possible, **GMS** must authorise **GMM7** to use the following endpoint:<br>
 `/Route/{routeID}/Complete`
 
 ## User Interaction and Design
