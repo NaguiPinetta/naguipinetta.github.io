@@ -1,5 +1,5 @@
 ---
-title: Changing a Router's Password on Teleport
+title: Tutorial - Changing a Router's Password 
 layout: post
 post-image: "https://i.ibb.co/9p7XPrg/teste.png" 
 description: Crafting roadmaps for uncharted solutions
@@ -23,7 +23,6 @@ tags:
 
   gtag('config', 'G-J0NKP19PLY');
 </script>
-
 
 ![intro](/assets/images/images-changingpasswords-intro.png)
 
