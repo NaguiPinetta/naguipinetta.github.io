@@ -14,11 +14,11 @@ tags:
 
 ## Use Case
 
-🔥 asd
+🔥 abc
 
-🍍 asd
+🍍 abc
 
-🚀 asd
+🚀 abc
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NKP19PLY"></script>
