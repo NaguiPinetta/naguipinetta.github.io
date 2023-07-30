@@ -1,20 +1,20 @@
 ---
 title: Tech Specs / User Stories
 layout: post
-post-image: "https://i.ibb.co/L08F6kH/managers.png"
+post-image: 'https://i.ibb.co/L08F6kH/managers.png'
 description: Tailormade microcopy to suit up your apps
 tags:
-- Tech Specs
-- UX Design
-- UX Writing
-- Product Management
-- Technical Writing
-- English
----
+  - Tech Specs
+  - UX Design
+  - UX Writing
+  - Product Management
+  - Technical Writing
+  - English
 
+---
 ## Use Case
 
-🔥 ....
+🔥 ...
 
 🍍 ...
 
