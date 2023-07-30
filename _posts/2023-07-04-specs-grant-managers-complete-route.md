@@ -170,7 +170,5 @@ As a Manager user, I would like to be able to access a section on the app where 
 ## User Interaction and Design
 The following details describe user interaction and the specifics of each screen. The images may contain links that lead to the [interactive prototype](https://xd.adobe.com/view).
 <br>
-<br>
-
 
 [Back to Home Page](/)
