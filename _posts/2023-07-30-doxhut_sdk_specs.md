@@ -81,8 +81,6 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 - **NetworkErrorException** when it was not possible to establish communication with the server. <br>
 <br> <br>
 
-> **Note**: This may be due to a communication error, lack of connectivity, or when the server is down.
-
 ### **Flow**
 
 #### Success Scenario 1 - Successfully start route
