@@ -173,7 +173,7 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 
 - Verify if the route status changes to **COMPLETED** after executing the complete route action.
 - Verify if any other route changes its status to **COMPLETED** after the execution of this action.
-- Make sure it is not possible to complete the route without having previously executed the Arrive at Destination method.
+- Make sure it is not possible to complete the route without having previously executed the **Arrive at Destination** method.
 
 
 [Back to Home Page](/)
