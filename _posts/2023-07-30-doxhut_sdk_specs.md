@@ -79,6 +79,7 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 - **NoRouteLoadedExceptio**n when no route has been loaded.
 - **RouteAlreadyStartedException** when the route has already been started.
 - **NetworkErrorException** when it was not possible to establish communication with the server. <br>
+<br>
 
 > **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.
 
