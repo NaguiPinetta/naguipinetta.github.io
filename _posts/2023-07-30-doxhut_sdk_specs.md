@@ -22,55 +22,43 @@ tags:
 
 # DoxHut SDK Documentation
 
-The **DoxHut SDK** is a powerful library designed to facilitate seamless integration between the iSales application used in **Pepsico RU**'s operation and the **DoxHut** system. By leveraging the **DoxHut SDK** methods, users can efficiently manage routes, initiate route plans, and complete routes directly from the **iSales** app. This documentation provides an in-depth guide to utilizing the **DoxHut SDK** and its key functionalities.
+## Introduction
 
-## DoxHut SDK - Library - Methods
+Currently, **pepsico-ru** drivers utilize the **iSales** mobile application to manage their routes and handle delivery-related tasks. To streamline their operations and enhance efficiency, we aim to integrate their existing ERP route import solution with **DoxHut**. To achieve this, we will create a robust API structure that facilitates seamless integration between their **ERP** system and **DoxHut**. <br>
 
-### **Goal**
+Additionally, we will develop a **DoxHut SDK**, which will enable their **iSales** app to interact with specific endpoints on the **DoxHut API**.
 
-- Build an API to integrate with **iSales** in **Pepsico RU**'s operation.
-
-### **Background and Strategic Fits**
-
-Currently, **Pepsico RU**'s drivers use the **iSales** application to manage their routes and perform delivery-related activities. The goal is to import the routes from **SAP** into **DoxHut**, while the users continue to utilize the **iSales** app.
-
-### **Assumptions** 
-
-- **iSales** users will continue to use the application, while the routes will be imported into **DoxHut**.
-
-### **Requirements**
-
-- Build an API to integrate with **iSales** in **Pepsico RU**'s operation.
-
-### **DoxHut Driver 7 Flow**
+### **DoxHut Driver Flow**
 
 ![intro](/assets/images/images-sdk-driver-flow.png)
 
-## DoxHut SDK - Methods - Start Route
+## DoxHut SDK - Library - Methods
 
-### **Goal**
+### Start Route
 
-- Start a route from a host application on the **DoxHut Server** via the **DoxHut Engine**.
+**Goal**
 
-### **Background and Strategic Fits**
+- Start a route from a host application on the **DoxHut Server** via the **DoxHut Engine**.<br>
 
-- On **Pepsico RU** operation, routes are currently departed from origin on **iSales** app.
-- Currently routes are imported from **SAP** into **iSales**.
+**Background and Strategic Fits**
 
-### **Assumptions**
+- On **pepsico-ru**, routes are currently initiated from the origin using the **iSales** app.
+- Currently, routes are imported from **ERP** into **iSales**.<br>
 
-- Routes will be imported from **SAP** to **DoxHut** and will contain all necessary information for successful loading on both the host app and **DoxHut Engine**.
-- System administrators will set up and maintain the driver's configurations on **DoxHut Live**, such as permissions and restrictions of route actions.
+**Assumptions**
 
-### **Requirements**
+- Routes will be imported from **ERP** to **DoxHut**, containing all necessary information for successful loading on both the host app and **DoxHut Engine**.
+- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on **DoxHut Live**.
+
+#### **Requirements**
 
 - Make it possible for **Pepsico RU** drivers to start routes from a host app to the **DoxHut Server** via the **DoxHut Engine**.
 
-### **User Story**
+#### **User Story**
 
 As an **iSales** user from **Pepsico RU**'s operation, I need to be able to start routes.
 
-### **DoxHut Engine Method**
+#### **DoxHut Engine Method**
 
 - Starts the route loaded by the user and changes its status to **"in progress"**.<br>
 
@@ -79,27 +67,28 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 - **NoRouteLoadedExceptio**n when no route has been loaded.
 - **RouteAlreadyStartedException** when the route has already been started.
 - **NetworkErrorException** when it was not possible to establish communication with the server. <br>
-<br> <br>
+<br>
+> **Note**: This may be due to a communication error, lack of connectivity, or when the server is down.<br>
 
-### **Flow**
+##### **Flow**
 
-#### Success Scenario 1 - Successfully start route
+###### Success Scenario 1 - Successfully start route
 
-- It is called **DoxHutEngine.startRoute** with success<br>
+- It is called **DoxHutEngine.startRoute** successfully.<br>
 
 **Requirements:**
 - It must be able to communicate with the server.
 - The driver must have loaded the route previously.
 - The driver must not have started the route previously.<br>
 
-#### Failure Scenario 1 - Network error 
+###### Failure Scenario 1 - Network error 
 
 - It is called **DoxHutEngine.startRoute** then **NetworkErrorException**.<br>
 
 **Requirements:**
 - It must be able to communicate with the server.<br>
 
-#### Failure Scenario 2 - No route loaded
+###### Failure Scenario 2 - No route loaded
 
 - It is called **DoxHutEngine.startRoute** then **NoRouteLoadedException**.<br>
 
@@ -107,46 +96,46 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 - It must be able to communicate with the server.
 - The driver must not have loaded the route previously.<br>
 
-#### Failure Scenario 3 - Route already started
+###### Failure Scenario 3 - Route already started
 
 - It is called **DoxHutEngine.startRoute** then **RouteAlreadyStartedException**.<br>
 
 **Requirements:**
 - It must be able to communicate with the server.
 - The driver must have loaded the route previously.
-- The driver must not have started the route previously.
+- The driver must not have started the route previously.<br>
 
-### **Acceptance Criteria**
+##### **Acceptance Criteria**
 
 - Verify if the route status changes to **STARTED** after executing the start route action.
 - Verify if any other route changes its status to **STARTED** after the execution of this action.
-- Verify that this method uses the **Request Queue** properly.
+- Verify that this method uses the **Request Queue** properly.<br>
 
-## DoxHut SDK - Methods - Complete Route
+### Complete Route
 
-### **Goal**
+**Goal**
 
-- Complete routes from a host application on the **DoxHut Server** via the **DoxHut Engine**.
+- Complete routes from a host application on the **DoxHut Server** via the **DoxHut Engine**.<br>
 
-### **Background and Strategic Fits**
+**Background and Strategic Fits**
 
-- On **Pepsico RU** operation, routes are currently departed from origin on **iSales** app.
-- Currently routes are imported from **SAP** into **iSales**.
+- On **pepsico-ru** operation, routes are currently departed from the origin using the **iSales** app.
+- Currently, routes are imported from **ERP** into **iSales**.<br>
 
-### **Assumptions**
+**Assumptions**
 
-- Routes will be imported from **SAP** to **DoxHut** and will contain all necessary information for successful loading on both the host app and **DoxHut Engine**.
-- System administrators will set up and maintain the driver's configurations on **DoxHut Live**, such as permissions and restrictions of route actions.
+- Routes will be imported from **ERP** to **DoxHut**, containing all necessary information for successful loading on both the host app and **DoxHut Engine**.
+- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on **DoxHut Live**.
 
-### **Requirements**
+#### **Requirements**
 
-- Make it possible for **Pepsico RU** drivers to complete routes from a host app to the **DoxHut Server** via the **DoxHut Engine**.
+- Make it possible for **Pepsico RU** drivers to complete routes from a host app to the **DoxHut Server** via the **DoxHut Engine**.<br>
 
-### **User Story**
+#### **User Story**
 
-As an **iSales** user from **Pepsico RU**'s operation, I need to be able to inform the **DoxHut Engine** when I complete a route.
+As an **iSales** user from **Pepsico RU**'s operation, I need to be able to inform the **DoxHut Engine** when I complete a route.<br>
 
-### **DoxHut Engine Method**
+#### **DoxHut Engine Method**
 
 - Action input by the driver or system administrator to indicate the route has been completed. Note: This is the final action in the route and can only be performed once the driver arrived at the destination and all stops are in a status different than **"pending"**.<br>
 
@@ -154,45 +143,45 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 - **TenantNotDefinedException** when no tenant has been informed.
 - **StillNotArrivedAtDestination** when the action **"Arrive at Destination"** has not been performed.
 - **NoRouteLoadedException** when no route has been loaded.
-- **NetworkErrorException** when it was not possible to establish communication with the server. 
+- **NetworkErrorException** when it was not possible to establish communication with the server.<br>
   
-> **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.
+> **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.<br>
 
-### **Flow**
+#### **Flow**
 
-#### **Success Scenario 1 - It is called DoxHutEngine.completeRoute with success**
+##### **Success Scenario 1 - It is called DoxHutEngine.completeRoute with success**
 
 **Requirements:**
 - The driver must have previously executed the **Arrive at Destination** method.
 - It must be able to communicate with the server.
 - The driver must have loaded the route previously.<br>
 
-#### **Failure Scenario 1 - Network error**
+##### **Failure Scenario 1 - Network error**
 - It is called **DoxHutEngine.completeRoute**, then **NetworkErrorException** is thrown.<br>
 
 **Requirements:**
-- It must not be able to communicate with the server.
+- It must not be able to communicate with the server.<br>
 
-#### **Failure Scenario 2 - No route loaded**
+##### **Failure Scenario 2 - No route loaded**
 - It is called **DoxHutEngine.completeRoute**, then **NoRouteLoadedException** is thrown.<br>
 
 **Requirements:**
 - It must be able to communicate with the server.
 - The driver must not have loaded the route previously.<br>
 
-#### **Failure Scenario 3 - Still not arrived at the destination**
+##### **Failure Scenario 3 - Still not arrived at the destination**
 - It is called **DoxHutEngine.completeRoute**, then **tillNotArrivedAtDestination** is thrown.<br>
 
 **Requirements:**
 - The driver must have not previously executed the **Arrive at Destination** method.
 - It must be able to communicate with the server.
-- The driver must have loaded the route previously.
+- The driver must have loaded the route previously.<br>
 
 ### **Acceptance Criteria**
 
 - Verify if the route status changes to **COMPLETED** after executing the complete route action.
 - Verify if any other route changes its status to **COMPLETED** after the execution of this action.
-- Make sure it is not possible to complete the route without having previously executed the **Arrive at Destination** method.
+- Make sure it is not possible to complete the route without having previously executed the **Arrive at Destination** method.<br>
 
 
 [Back to Home Page](/)
