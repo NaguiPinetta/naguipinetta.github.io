@@ -1,45 +1,45 @@
 ---
 title: DoxHut SDK Specs
+layout: post
+post-image: "https://i.ibb.co/cCFJXRF/sdk.png"
+description: Putting out fires with docs since 2017
+tags:
+- Business Requirements
+- Technical Writing
+- Technical Specification
+- SDK Docs
+- English
 
 ---
 # DoxHut SDK Documentation
 
-The DoxHut SDK is a powerful tool designed to seamlessly integrate DoxHut driver applications and the backend server with Pepsico Russia's iSales solution. It provides a set of methods that enable efficient route planning, initiation, and completion directly from the iSales app. By leveraging the DoxHut SDK, drivers can effortlessly manage routes, ensuring accurate and real-time data exchange between the iSales app and the DoxHut Server.
+The DoxHut SDK is a powerful library designed to facilitate seamless integration between the iSales application used in Pepsico Russia's operation and the DoxHut system. By leveraging the DoxHut SDK methods, users can efficiently manage routes, initiate route plans, and complete routes directly from the iSales app. This documentation provides an in-depth guide to utilizing the DoxHut SDK and its key functionalities.
 
-## GreenMile Nav - Permit Receiving Configurations via Intent
+![intro](/assets/images/images-sdk-driver-flow.png)
 
-**Meta**
+## DoxHut SDK - Library - Methods
 
-- Allow other applications to send vehicle configurations, route restrictions, and hazardous materials load to the DoxHut Nav.
+**Goal**
 
-**Premises**
+- Build an API to integrate with iSales in Pepsico Russia's operation.
 
-- Currently, the configurations are manually set by the driver (Driver 7 user).
-- Along the route, both the material load and vehicle weight may change. An external application could send updated vehicle specs to take advantage of different scenarios, relieving the driver of this responsibility and making the configurations more dynamic and aligned with reality.
+**Background and Strategic Fits**
+
+Currently, Pepsico Russia's drivers use the iSales application to manage their routes and perform delivery-related activities. The goal is to import the routes from SAP into DoxHut, while the users continue to utilize the iSales app.
+
+**Assumptions**
+
+- iSales users will continue to use the application, while the routes will be imported into DoxHut.
 
 **Requirements**
 
-- Add a stop from a host application on the DoxHut Server via the DoxHut Engine.
+- Build an API to integrate with iSales in Pepsico Russia's operation.
 
-| Req | User Story | GM Engine Method | Flow | Acceptance Criteria |
-| --- | --- | --- | --- | --- |
-| 01 | As a user of DoxHut Nav, I want to avoid manual app configurations by receiving them directly from the last-mile application I use. | GMEngine.addStop | Success Scenario 1 - Successfully Add Stop
-• It is called GMEngine.addStop with success
-Requirements:
-• it must be able to communicate with the server
-• the driver must have started the route previously
-Failure Scenario 1 - Network Error
-• It is called GMEngine.addStop then NetworkErrorException.
-Requirements:
-• it must not be able to communicate with the server
-Failure Scenario 2 - Route Not Started
-• It is called GMEngine.addStop then RouteNotStartedException.
-Requirements:
-• it must be able to communicate with the server
-• the driver must not have started the route previously. | • Verify if the stop is created and added to the route.
-• Verify if the added stop has all necessary information and its position on the route is correct. |
+**GM Driver 7 Flow**
 
-## GreenMile SDK - Methods - Start Route
+[Flowchart illustrating the entire driver routing]
+
+## DoxHut SDK - Methods - Start Route
 
 **Goal**
 
@@ -47,8 +47,8 @@ Requirements:
 
 **Background and Strategic Fits**
 
-- On Pepsico Russia's operation, routes are currently departed from the origin on the iSales app.
-- Currently, routes are imported from SAP into iSales.
+- On Pepsico Russia operation, routes are currently departed from origin on iSales app.
+- Currently routes are imported from SAP into iSales.
 
 **Assumptions**
 
@@ -59,34 +59,32 @@ Requirements:
 
 - Make it possible for Pepsico Russia drivers to start routes from a host app to the DoxHut Server via the DoxHut Engine.
 
-| Title | User Story | GM Engine Method | Flow | Acceptance Criteria |
+| Title | User Story | DoxHut Engine Method | Flow | Acceptance Criteria |
 | --- | --- | --- | --- | --- |
-| Start Route | As an iSales user from Pepsico RU's operation, I need to be able to start routes. | GMEngine.startRoute | Success Scenario 1 - Successfully start route
-It is called GMEngine.startRoute with success
+| Start Route | As an iSales user from Pepsico RU's operation, I need to be able to start routes. | DoxHutEngine.startRoute | Success Scenario 1 - Successfully start route
+It is called DoxHutEngine.startRoute with success
 Requirements:
-• the driver must have previously executed the Arrive at Destination method.
-• it must be able to communicate with the server.
-• the driver must have loaded the route previously
-
-Failure Scenario 1 - Network Error
-It is called GMEngine.startRoute then NetworkErrorException is thrown.
+• The driver must have loaded the route previously.
+• The driver must not have started the route previously.
+Failure Scenario 1 - Network error
+It is called DoxHutEngine.startRoute, then NetworkErrorException.
 Requirements:
-• it must not be able to communicate with the server
-Failure Scenario 2 - No Route Loaded
-It is called GMEngine.startRoute then NoRouteLoadedException is thrown.
+• It must be able to communicate with the server.
+Failure Scenario 2 - No route loaded
+It is called DoxHutEngine.startRoute, then NoRouteLoadedException.
 Requirements:
-• it must be able to communicate with the server.
-• the driver must not have loaded the route previously
-Failure Scenario 3 - Route Already Started
-It is called GMEngine.startRoute then RouteAlreadyStartedException is thrown.
+• It must be able to communicate with the server.
+• The driver must not have loaded the route previously.
+Failure Scenario 3 - Route already started
+It is called DoxHutEngine.startRoute, then RouteAlreadyStartedException.
 Requirements:
-• it must be able to communicate with the server.
-• the driver must have loaded the route previously.
-• the driver must not have started the route previously. | • Verify if route status changes to STARTED after executing the start route action.
-• Verify if any other route changed their status to STARTED after the execution of this action.
+• It must be able to communicate with the server.
+• The driver must have loaded the route previously.
+• The driver must not have started the route previously. | • Verify if the route status changes to STARTED after executing the start route action.
+• Verify if any other route changes its status to STARTED after the execution of this action.
 • Verify that this method uses the Request Queue properly. |
 
-## GreenMile SDK - Methods - Complete Route
+## DoxHut SDK - Methods - Complete Route
 
 **Goal**
 
@@ -94,8 +92,8 @@ Requirements:
 
 **Background and Strategic Fits**
 
-- On Pepsico Russia's operation, routes are currently departed from the origin on the iSales app.
-- Currently, routes are imported from SAP into iSales.
+- On Pepsico Russia operation, routes are currently departed from origin on iSales app.
+- Currently routes are imported from SAP into iSales.
 
 **Assumptions**
 
@@ -106,38 +104,33 @@ Requirements:
 
 - Make it possible for Pepsico Russia drivers to complete routes from a host app to the DoxHut Server via the DoxHut Engine.
 
-| Title | User Story | GM Engine Method | Flow | Acceptance Criteria |
+| Title | User Story | DoxHut Engine Method | Flow | Acceptance Criteria |
 | --- | --- | --- | --- | --- |
-| Complete Route | As an iSales user from Pepsico RU's operation, I need to be able to inform the GM Engine when I complete a route. | GMEngine.completeRoute | Success Scenario 1
-It is called GMEngine.completeRoute with success
+| Complete Route | As an iSales user from Pepsico RU's operation, I need to be able to inform the DoxHut Engine when I complete a route. | DoxHutEngine.completeRoute | Success Scenario 1 - It is called DoxHutEngine.completeRoute with success
 Requirements:
-• the driver must have previously executed the Arrive at Destination method.
-• it must be able to communicate with the server.
-• the driver must have loaded the route previously
+• The driver must have previously executed the Arrive at Destination method.
+• It must be able to communicate with the server.
+• The driver must have loaded the route previously.
 
-Failure Scenario 1 - Network Error
-It is called GMEngine.completeRoute then NetworkErrorException is thrown.
+Failure Scenario 1 - Network error
+It is called DoxHutEngine.completeRoute, then NetworkErrorException is thrown.
 Requirements:
-• it must not be able to communicate with the server
-Failure Scenario 2 - No Route Loaded
-It is called GMEngine.completeRoute then NoRouteLoadedException is thrown.
+• It must not be able to communicate with the server.
+
+Failure Scenario 2 - No route loaded
+It is called DoxHutEngine.completeRoute, then NoRouteLoadedException is thrown.
 Requirements:
-• it must be able to communicate with the server.
-• the driver must not have loaded the route previously
-Failure Scenario 3 - Still Not Arrived at Destination
-It is called GMEngine.completeRoute then StillNotArrivedAtDestination is thrown.
+• It must be able to communicate with the server.
+• The driver must not have loaded the route previously.
+
+Failure Scenario 3 - Still not arrived at the destination
+It is called DoxHutEngine.completeRoute, then StillNotArrivedAtDestination is thrown.
 Requirements:
-• the driver must have not previously executed the Arrive at Destination method.
-• it must be able to communicate with the server.
-• the driver must have loaded the route previously | • Verify if route status changes to COMPLETED after executing the complete route action.
-• Verify if any other route changed their status to COMPLETED after the execution of this action.
+• The driver must have not previously executed the Arrive at Destination method.
+• It must be able to communicate with the server.
+• The driver must have loaded the route previously. | • Verify if the route status changes to COMPLETED after executing the complete route action.
+• Verify if any other route changes its status to COMPLETED after the execution of this action.
 • Make sure it is not possible to complete the route without having previously executed the Arrive at Destination method. |
 
-By leveraging the DoxHut SDK and its methods, Pepsico Russia can streamline its route management processes and optimize its delivery operations, enhancing overall efficiency and customer satisfaction.
-
-Please note that the provided documentation is subject to updates and improvements to meet specific use cases and requirements. For any questions or support, feel free to contact our team.
-
----
-This is the revised and expanded introduction for the combined documentation page, now titled "DoxHut SDK Documentation." If you need further modifications or have any specific preferences, don't hesitate to let me know!
 
 ![2023-07-00-929092.png](https://naguipinetta.github.io/assets/2023-07-00-929092.png)
