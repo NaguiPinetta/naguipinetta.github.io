@@ -20,172 +20,175 @@ tags:
 
 🚀 ...
 
-# DoxHut SDK Documentation
+# <span style="color: #00008B">DoxHut SDK Documentation</span>
 
-## Introduction
+## <span style="color: #000000">Introduction</span>
 
-Currently, **pepsico-ru** drivers utilize the **iSales** mobile application to manage their routes and handle delivery-related tasks. To streamline their operations and enhance efficiency, we aim to integrate their existing ERP route import solution with **DoxHut**. To achieve this, we will create a robust API structure that facilitates seamless integration between their **ERP** system and **DoxHut**. <br>
+Currently, <span style="color: #00008B">pepsico-ru</span> drivers utilize the <span style="color: #00008B">iSales</span> mobile application to manage their routes and handle delivery-related tasks. To streamline their operations and enhance efficiency, we aim to integrate their existing <span style="color: #A52A2A">ERP</span> route import solution with <span style="color: #00008B">DoxHut</span>. To achieve this, we will create a robust API structure that facilitates seamless integration between their <span style="color: #A52A2A">ERP</span> system and <span style="color: #00008B">DoxHut</span>.
 
-Additionally, we will develop a **DoxHut SDK**, which will enable their **iSales** app to interact with specific endpoints on the **DoxHut API**.
+Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, which will enable their <span style="color: #00008B">iSales</span> app to interact with specific endpoints on the <span style="color: #00008B">DoxHut API</span>.
 
-### **DoxHut Driver Flow**
+### <span style="color: #006400">DoxHut Driver Flow</span>
 
 ![intro](/assets/images/images-sdk-driver-flow.png)
 
-## DoxHut SDK - Library - Methods
+## <span style="color: #000000">DoxHut SDK - Library - Methods</span>
 
-### Start Route
+### <span style="color: #000000">Start Route</span>
 
 **Goal**
 
-- Start a route from a host application on the **DoxHut Server** via the **DoxHut Engine**.<br>
+Start a route from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
 **Background and Strategic Fits**
 
-- On **pepsico-ru**, routes are currently initiated from the origin using the **iSales** app.
-- Currently, routes are imported from **ERP** into **iSales**.<br>
+- On <span style="color: #00008B">pepsico-ru</span>, routes are currently initiated from the origin using the <span style="color: #00008B">iSales</span> app.
+- Currently, routes are imported from <span style="color: #A52A2A">ERP</span> into <span style="color: #00008B">iSales</span>.
 
 **Assumptions**
 
-- Routes will be imported from **ERP** to **DoxHut**, containing all necessary information for successful loading on both the host app and **DoxHut Engine**.
-- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on **DoxHut Live**.
+- Routes will be imported from <span style="color: #A52A2A">ERP</span> to <span style="color: #00008B">DoxHut</span>, containing all necessary information for successful loading on both the host app and <span style="color: #00008B">DoxHut Engine</span>.
+- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on <span style="color: #00008B">DoxHut Live</span>.
 
-#### **Requirements**
+#### <span style="color: #A52A2A">Requirements</span>
 
-- Make it possible for **Pepsico RU** drivers to start routes from a host app to the **DoxHut Server** via the **DoxHut Engine**.
+- Make it possible for <span style="color: #00008B">Pepsico RU</span> drivers to start routes from a host app to the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
-#### **User Story**
+#### <span style="color: #A52A2A">User Story</span>
 
-As an **iSales** user from **Pepsico RU**'s operation, I need to be able to start routes.
+As an <span style="color: #00008B">iSales</span> user from <span style="color: #00008B">Pepsico RU</span>'s operation, I need to be able to start routes.
 
-#### **DoxHut Engine Method**
+#### <span style="color: #A52A2A">DoxHut Engine Method</span>
 
-- Starts the route loaded by the user and changes its status to **"in progress"**.<br>
+- Starts the route loaded by the user and changes its status to <span style="color: #A52A2A">"in progress"</span>.
 
 **Throws:**
-- **TenantNotDefinedException** when no tenant has been informed.
-- **NoRouteLoadedExceptio** when no route has been loaded.
-- **RouteAlreadyStartedException** when the route has already been started.
-- **NetworkErrorException** when it was not possible to establish communication with the server. 
-<br>
+- <span style="color: #A52A2A">TenantNotDefinedException</span> when no tenant has been informed.
+- <span style="color: #A52A2A">NoRouteLoadedException</span> when no route has been loaded.
+- <span style="color: #A52A2A">RouteAlreadyStartedException</span> when the route has already been started.
+- <span style="color: #A52A2A">NetworkErrorException</span> when it was not possible to establish communication with the server.
 
-> **Note**: Communication errors, lack of connectivity, or when the server is down may cause **NetworkErrorException**.
+> <span style="color: #00008B">Note</span>: Communication errors, lack of connectivity, or when the server is down may cause <span style="color: #A52A2A">NetworkErrorException</span>.
 
-##### **Flow**
+##### <span style="color: #A52A2A">Flow</span>
 
-###### Success Scenario 1 - Successfully start route
+###### <span style="color: #8B0000">Success Scenario 1 - Successfully start route</span>
 
-- **DoxHutEngine.startRoute** is called successfully.<br>
+- <span style="color: #00008B">DoxHutEngine.startRoute</span> is called successfully.
 
 **Requirements:**
 - Communication with the server.
 - The driver must have previously loaded the route.
-- The route could not have been previously started.<br>
+- The route could not have been previously started.
 
-###### Failure Scenario 1 - Network error 
+###### <span style="color: #8B0000">Failure Scenario 1 - Network error</span>
 
-- **DoxHutEngine.startRoute** is called, then **NetworkErrorException* is thrown.<br>
-
-**Requirements:**
-- Communication with the server.<br>
-
-###### Failure Scenario 2 - No route loaded
-
-- **DoxHutEngine.startRoute** is called, then **NoRouteLoadedException** is thrown.<br>
+- <span style="color: #00008B">DoxHutEngine.startRoute</span> is called, then <span style="color: #A52A2A">NetworkErrorException</span> is thrown.
 
 **Requirements:**
 - Communication with the server.
-- The driver must have not previously loaded the route.<br>
 
-###### Failure Scenario 3 - Route already started
+###### <span style="color: #8B0000">Failure Scenario 2 - No route loaded</span>
 
-- **DoxHutEngine.startRoute** is called, then **RouteAlreadyStartedException** is thrown.<br>
+- <span style="color: #00008B">DoxHutEngine.startRoute</span> is called, then <span style="color: #A52A2A">NoRouteLoadedException</span> is thrown.
+
+**Requirements:**
+- Communication with the server.
+- The driver must not have previously loaded the route.
+
+###### <span style="color: #8B0000">Failure Scenario 3 - Route already started</span>
+
+- <span style="color: #00008B">DoxHutEngine.startRoute</span> is called, then <span style="color: #A52A2A">RouteAlreadyStartedException</span> is thrown.
 
 **Requirements:**
 - Communication with the server.
 - The driver must have previously loaded the route.
-- The route could not have bee previously started.<br>
+- The route could not have been previously started.
 
-##### **Acceptance Criteria**
+##### <span style="color: #A52A2A">Acceptance Criteria</span>
 
-- Verify whether the route status changes to **STARTED** after executing the start route action.
-- Verify whether any other route changes its status to **STARTED** after execunting this action.
-- Verify whether this method uses the **Request Queue** correclty.<br>
+- Verify whether the route status changes to <span style="color: #A52A2A">STARTED</span> after executing the start route action.
+- Verify whether any other route changes its status to <span style="color: #A52A2A">STARTED</span> after executing this action.
+- Verify whether this method uses the <span style="color: #A52A2A">Request Queue</span> correctly.
 
-### Complete Route
+### <span style="color: #000000">Complete Route</span>
 
 **Goal**
 
-- Complete routes from a host application on the **DoxHut Server** via the **DoxHut Engine**.<br>
+- Complete routes from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
 **Background and Strategic Fits**
 
-- On **pepsico-ru** operation, routes are currently departed from the origin using the **iSales** app.
-- Currently, routes are imported from **ERP** into **iSales**.<br>
+- On <span style="color: #00008B">pepsico-ru</span> operation, routes are currently departed from the origin using the <span style="color: #00008B">iSales</span> app.
+- Currently, routes are imported from <span style="color: #A52A2A">ERP</span> into <span style="color: #00008B">iSales</span>.
 
 **Assumptions**
 
-- Routes will be imported from **ERP** to **DoxHut**, containing all necessary information for successful loading on both the host app and **DoxHut Engine**.
-- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on **DoxHut Live**.
+- Routes will be imported from <span style="color: #A52A2A">ERP</span> to <span style="color: #00008B">DoxHut</span>, containing all necessary information for successful loading on both the host app and <span style="color: #00008B">DoxHut Engine</span>.
+- System administrators will configure and maintain driver configurations, permissions, and route action restrictions on <span style="color: #00008B">DoxHut Live</span>.
 
-#### **Requirements**
+#### <span style="color: #A52A2A">Requirements</span>
 
-- Make it possible for **pepsico-ru** drivers to complete routes from a host app to the **DoxHut Server** via the **DoxHut Engine**.<br>
+- Make it possible for <span style="color: #00008B">pepsico-ru</span> drivers to complete routes from a host app to the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
-#### **User Story**
+#### <span style="color: #A52A2A">User Story</span>
 
-- As an **iSales** user from **pepsico-ru**'s operation, I need to be able to inform the **DoxHut Engine** when I complete a route.<br>
+- As an <span style="color: #00008B">iSales</span> user from <span style="color: #00008B">pepsico-ru</span>'s operation, I need to be able to inform the <span style="color: #00008B">DoxHut Engine</span> when I complete a route.
 
-#### **DoxHut Engine Method**
+#### <span style="color: #A52A2A">DoxHut Engine Method</span>
 
-- Action input by the driver or system administrator to indicate the route has been completed.<br> 
+- Action input by the driver or system administrator to indicate the route has been completed.
 
-> **Note**: This is the last route action possible and can only be performed once the driver arrived at the destination and all stops are in a status different than **"pending"**.<br>
+> <span style="color: #00008B">Note</span>: This is the last route action possible and can only be performed once the driver arrived at the destination and all stops are in a status different than <span style="color: #A52A2A">"pending"</span>.
 
 **Throws:**
-- **TenantNotDefinedException** when no tenant has been informed.
-- **StillNotArrivedAtDestination** when the action **"Arrive at Destination"** has not yet been performed.
-- **NoRouteLoadedException** when no route has been loaded.
-- **NetworkErrorException** when it was not possible to establish communication with the server.
-<br>  
+- <span style="color: #A52A2A">TenantNotDefinedException</span> when no tenant has been informed.
+- <span style="color: #A52A2A">StillNotArrivedAtDestination</span> when the action <span style="color: #A52A2A">"Arrive at Destination"</span> has not yet been performed.
+- <span style="color: #A52A2A">NoRouteLoadedException</span> when no route has been loaded.
+- <span style="color: #A52A2A">NetworkErrorException</span> when it was not possible to establish communication with the server.
 
-> **Note**: Communication errors, lack of connectivity, or when the server is down may cause **NetworkErrorException**.<br>
+> <span style="color: #00008B">Note</span>: Communication errors, lack of connectivity, or when the server is down may cause <span style="color: #A52A2A">NetworkErrorException</span>.
 
-#### **Flow**
+#### <span style="color: #A52A2A">Flow</span>
 
-##### **Success Scenario 1 - It is called DoxHutEngine.completeRoute with success**
+##### <span style="color: #8B0000">Success Scenario 1 - It is called DoxHutEngine.completeRoute with success</span>
 
 **Requirements:**
-- The driver must have previously executed the **Arrive at Destination** method.
+- The driver must have previously executed the <span style="color: #A52A2A">Arrive at Destination</span> method.
 - Communication with server.
-- The driver must have previously loaded the route.<br>
+- The driver must have previously loaded the route.
 
-##### **Failure Scenario 1 - Network error**
-- **DoxHutEngine.completeRoute** is called, then **NetworkErrorException** is thrown.<br>
+##### <span style="color: #8B0000">Failure Scenario 1 - Network error</span>
+
+- <span style="color: #00008B">DoxHutEngine.completeRoute</span> is called, then <span style="color: #A52A2A">NetworkErrorException</span> is thrown.
 
 **Requirements:**
-- It must not be able to communicate with the server.<br>
+- It must not be able to communicate with the server.
 
-##### **Failure Scenario 2 - No route loaded**
-- **DoxHutEngine.completeRoute** is called, then **NoRouteLoadedException** is thrown.<br>
+##### <span style="color: #8B0000">Failure Scenario 2 - No route loaded</span>
+
+- <span style="color: #00008B">DoxHutEngine.completeRoute</span> is called, then <span style="color: #A52A2A">NoRouteLoadedException</span> is thrown.
 
 **Requirements:**
 - Communication with server.
-- The driver must have not previously loaded the route.<br>
+- The driver must not have previously loaded the route.
 
-##### **Failure Scenario 3 - Still not arrived at the destination**
-- **DoxHutEngine.completeRoute** is called, then **tillNotArrivedAtDestination** is thrown.<br>
+##### <span style="color: #8B0000">Failure Scenario 3 - Still not arrived at the destination** </span>
+
+- **DoxHutEngine.completeRoute** is called, then **StillNotArrivedAtDestination** is thrown.
 
 **Requirements:**
 - The driver must have not previously executed the **Arrive at Destination** method.
 - Communication with server.
-- The driver must have previously loaded the route.<br>
+- The driver must have previously loaded the route.
 
-#### **Acceptance Criteria**
+
+<span style="color:darkmagenta"> #### **Acceptance Criteria** </span>
 
 - Verify whether the route status changes to **COMPLETED** after executing the complete route action.
 - Verify whether any other route changes its status to **COMPLETED** after executing this method.
-- Ensure it is not possible to complete the route without having previously executed the **Arrive at Destination** method.<br>
+- Ensure it is not possible to complete the route without having previously executed the **Arrive at Destination** method.
+
 
 
 [Back to Home Page](/)
