@@ -75,13 +75,13 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 - Starts the route loaded by the user and changes its status to **"in progress"**.<br>
 
 **Throws:**
-**TenantNotDefinedException** when no tenant has been informed.
-**NoRouteLoadedExceptio**n when no route has been loaded.
-**RouteAlreadyStartedException** when the route has already been started.
-**NetworkErrorException** when it was not possible to establish communication with the server. <br>
+- **TenantNotDefinedException** when no tenant has been informed.
+- **NoRouteLoadedExceptio**n when no route has been loaded.
+- **RouteAlreadyStartedException** when the route has already been started.
+- **NetworkErrorException** when it was not possible to establish communication with the server. <br>
 <br>
 
-> **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.
+> **Note**: This may be due to a communication error, lack of connectivity, or when the server is down.<br>
 
 > **Note**: This method uses the request queue.
 
