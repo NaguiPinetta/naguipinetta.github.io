@@ -133,7 +133,7 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 
 #### **User Story**
 
-As an **iSales** user from **Pepsico RU**'s operation, I need to be able to inform the **DoxHut Engine** when I complete a route.<br>
+- As an **iSales** user from **Pepsico RU**'s operation, I need to be able to inform the **DoxHut Engine** when I complete a route.<br>
 
 #### **DoxHut Engine Method**
 
@@ -143,8 +143,8 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 - **TenantNotDefinedException** when no tenant has been informed.
 - **StillNotArrivedAtDestination** when the action **"Arrive at Destination"** has not been performed.
 - **NoRouteLoadedException** when no route has been loaded.
-- **NetworkErrorException** when it was not possible to establish communication with the server.<br>
-  
+- **NetworkErrorException** when it was not possible to establish communication with the server.
+<br>  
 > **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.<br>
 
 #### **Flow**
@@ -177,7 +177,7 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 - It must be able to communicate with the server.
 - The driver must have loaded the route previously.<br>
 
-### **Acceptance Criteria**
+#### **Acceptance Criteria**
 
 - Verify if the route status changes to **COMPLETED** after executing the complete route action.
 - Verify if any other route changes its status to **COMPLETED** after the execution of this action.
