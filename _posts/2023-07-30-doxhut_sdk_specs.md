@@ -74,36 +74,36 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to star
 
 - Starts the route loaded by the user and changes its status to **"in progress"**.
 - Throws:
-  - **TenantNotDefinedException** when no tenant has been informed.
-  - **NoRouteLoadedExceptio**n when no route has been loaded.
-  - **RouteAlreadyStartedException** when the route has already been started.
-  - **NetworkErrorException** when it was not possible to establish communication with the server. Note: this may be due to a communication error, lack of connectivity, or when the server is down.
+- **TenantNotDefinedException** when no tenant has been informed.
+- **NoRouteLoadedExceptio**n when no route has been loaded.
+- **RouteAlreadyStartedException** when the route has already been started.
+- **NetworkErrorException** when it was not possible to establish communication with the server. Note: this may be due to a communication error, lack of connectivity, or when the server is down.
 
 > **Note**: This method uses the request queue.
 
 **Flow**
 
 - **Success Scenario 1 - Successfully start route**
-  - It is called **DoxHutEngine.startRoute** with success
-  - Requirements:
-    - It must be able to communicate with the server.
-    - The driver must have loaded the route previously.
-    - The driver must not have started the route previously.
+- It is called **DoxHutEngine.startRoute** with success
+- Requirements:
+- It must be able to communicate with the server.
+- The driver must have loaded the route previously.
+- The driver must not have started the route previously.
 - **Failure Scenario 1 - Network error**
-  - It is called **DoxHutEngine.startRoute** then **NetworkErrorException**.
-  - Requirements:
-    - It must be able to communicate with the server.
+- It is called **DoxHutEngine.startRoute** then **NetworkErrorException**.
+- Requirements:
+- It must be able to communicate with the server.
 - **Failure Scenario 2 - No route loaded**
-  - It is called **DoxHutEngine.startRoute** then **NoRouteLoadedException**.
-  - Requirements:
-    - It must be able to communicate with the server.
-    - The driver must not have loaded the route previously.
+- It is called **DoxHutEngine.startRoute** then **NoRouteLoadedException**.
+- Requirements:
+- It must be able to communicate with the server.
+- The driver must not have loaded the route previously.
 - **Failure Scenario 3 - Route already started**
-  - It is called **DoxHutEngine.startRoute** then **RouteAlreadyStartedException**.
-  - Requirements:
-    - It must be able to communicate with the server.
-    - The driver must have loaded the route previously.
-    - The driver must not have started the route previously.
+- It is called **DoxHutEngine.startRoute** then **RouteAlreadyStartedException**.
+- Requirements:
+- It must be able to communicate with the server.
+- The driver must have loaded the route previously.
+- The driver must not have started the route previously.
 
 **Acceptance Criteria**
 
@@ -139,35 +139,35 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 
 - Action input by the driver or system administrator to indicate the route has been completed. Note: This is the final action in the route and can only be performed once the driver arrived at the destination and all stops are in a status different than **"pending"**.
 - Throws:
-  - **TenantNotDefinedException** when no tenant has been informed.
-  - **StillNotArrivedAtDestination** when the action **"Arrive at Destination"** has not been performed.
-  - **NoRouteLoadedException** when no route has been loaded.
-  - **NetworkErrorException** when it was not possible to establish communication with the server. 
+- **TenantNotDefinedException** when no tenant has been informed.
+- **StillNotArrivedAtDestination** when the action **"Arrive at Destination"** has not been performed.
+- **NoRouteLoadedException** when no route has been loaded.
+- **NetworkErrorException** when it was not possible to establish communication with the server. 
   
 > **Note**: this may be due to a communication error, lack of connectivity, or when the server is down.
 
 **Flow**
 
 - **Success Scenario 1 - It is called DoxHutEngine.completeRoute with success**
-  - Requirements:
-    - The driver must have previously executed the **Arrive at Destination** method.
-    - It must be able to communicate with the server.
-    - The driver must have loaded the route previously.
+- Requirements:
+- The driver must have previously executed the **Arrive at Destination** method.
+- It must be able to communicate with the server.
+- The driver must have loaded the route previously.
 - **Failure Scenario 1 - Network error**
-  - It is called **DoxHutEngine.completeRoute**, then **NetworkErrorException** is thrown.
-  - Requirements:
-    - It must not be able to communicate with the server.
+- It is called **DoxHutEngine.completeRoute**, then **NetworkErrorException** is thrown.
+- Requirements:
+- It must not be able to communicate with the server.
 - **Failure Scenario 2 - No route loaded**
-  - It is called **DoxHutEngine.completeRoute**, then **NoRouteLoadedException** is thrown.
-  - Requirements:
-    - It must be able to communicate with the server.
-    - The driver must not have loaded the route previously.
+- It is called **DoxHutEngine.completeRoute**, then **NoRouteLoadedException** is thrown.
+- Requirements:
+- It must be able to communicate with the server.
+- The driver must not have loaded the route previously.
 - **Failure Scenario 3 - Still not arrived at the destination**
-  - It is called **DoxHutEngine.completeRoute**, then **tillNotArrivedAtDestination** is thrown.
-  - Requirements:
-    - The driver must have not previously executed the Arrive at Destination method.
-    - It must be able to communicate with the server.
-    - The driver must have loaded the route previously.
+- It is called **DoxHutEngine.completeRoute**, then **tillNotArrivedAtDestination** is thrown.
+- **Requirements**:
+- The driver must have not previously executed the Arrive at Destination method.
+- It must be able to communicate with the server.
+- The driver must have loaded the route previously.
 
 **Acceptance Criteria**
 
