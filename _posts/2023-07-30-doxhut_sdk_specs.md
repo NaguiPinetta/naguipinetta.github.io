@@ -68,6 +68,7 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 - <span style="color: #A52A2A">RouteAlreadyStartedException</span> when the route has already been started.
 - <span style="color: #A52A2A">NetworkErrorException</span> when it was not possible to establish communication with the server.
 <br>
+<br>
 > <span style="color: #00008B">Note</span>: Communication errors, lack of connectivity, or when the server is down may cause <span style="color: #A52A2A">NetworkErrorException</span>.
 
 ##### <span style="color: #A52A2A">Flow</span>
@@ -139,6 +140,7 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 
 - Action input by the driver or system administrator to indicate the route has been completed.
 <br>
+<br>
 > <span style="color: #00008B">Note</span>: This is the last route action possible and can only be performed once the driver arrived at the destination and all stops are in a status different than <span style="color: #A52A2A">"pending"</span>.
 
 **Throws:**
@@ -146,6 +148,7 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 - <span style="color: #A52A2A">StillNotArrivedAtDestination</span> when the action <span style="color: #A52A2A">"Arrive at Destination"</span> has not yet been performed.
 - <span style="color: #A52A2A">NoRouteLoadedException</span> when no route has been loaded.
 - <span style="color: #A52A2A">NetworkErrorException</span> when it was not possible to establish communication with the server.
+<br>
 <br>
 > <span style="color: #00008B">Note</span>: Communication errors, lack of connectivity, or when the server is down may cause <span style="color: #A52A2A">NetworkErrorException</span>.
 
