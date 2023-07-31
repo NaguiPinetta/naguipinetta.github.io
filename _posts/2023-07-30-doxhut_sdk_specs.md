@@ -187,7 +187,7 @@ As an **iSales** user from **Pepsico RU**'s operation, I need to be able to info
 - It is called **DoxHutEngine.completeRoute**, then **tillNotArrivedAtDestination** is thrown.<br>
 
 **Requirements:**
-- The driver must have not previously executed the Arrive at Destination method.
+- The driver must have not previously executed the **Arrive at Destination** method.
 - It must be able to communicate with the server.
 - The driver must have loaded the route previously.
 
