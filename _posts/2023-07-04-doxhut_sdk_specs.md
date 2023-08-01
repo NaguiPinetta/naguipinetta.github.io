@@ -24,9 +24,9 @@ tags:
 
 ## <span style="color: #000000">Introduction</span>
 
-Currently, <span style="color: #00008B">pepsico-ru</span> drivers utilize the <span style="color: #00008B">iSales</span> mobile application to manage their routes and handle delivery-related tasks. To streamline their operations and enhance efficiency, we aim to integrate their existing <span style="color: #A52A2A">ERP</span> route import solution with <span style="color: #00008B">DoxHut</span>. To achieve this, we will create a robust API structure that facilitates seamless integration between their <span style="color: #A52A2A">ERP</span> system and <span style="color: #00008B">DoxHut</span>.
+- Currently, <span style="color: #00008B">pepsico-ru</span> drivers utilize the <span style="color: #00008B">iSales</span> mobile application to manage their routes and handle delivery-related tasks. To streamline their operations and enhance efficiency, we aim to integrate their existing <span style="color: #A52A2A">ERP</span> route import solution with <span style="color: #00008B">DoxHut</span>. To achieve this, we will create a robust API structure that facilitates seamless integration between their <span style="color: #A52A2A">ERP</span> system and <span style="color: #00008B">DoxHut</span>.
 
-Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, which will enable their <span style="color: #00008B">iSales</span> app to interact with specific endpoints on the <span style="color: #00008B">DoxHut API</span>.
+- Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, which will enable their <span style="color: #00008B">iSales</span> app to interact with specific endpoints on the <span style="color: #00008B">DoxHut API</span>.
 
 ### <span style="color: #006400">iSales App Flow</span>
 
@@ -38,7 +38,7 @@ Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, 
 
 #### <span style="color: #A52A2A">Goal</span>
 
-Start a route from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
+- Start a route from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
 #### <span style="color: #A52A2A">Background and Strategic Fits</span>
 
@@ -56,7 +56,7 @@ Start a route from a host application on the <span style="color: #00008B">DoxHut
 
 #### <span style="color: #A52A2A">User Story</span>
 
-As an <span style="color: #00008B">iSales</span> user from <span style="color: #00008B">Pepsico RU</span>'s operation, I need to be able to start routes.
+- As an <span style="color: #00008B">iSales</span> user from <span style="color: #00008B">Pepsico RU</span>'s operation, I need to be able to start routes.
 
 #### <span style="color: #A52A2A">DoxHut Engine Method</span>
 
@@ -81,7 +81,7 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 - Communication with the server.
 - The driver must have previously loaded the route.
 - The route could not have been previously started.
-
+<br>
 ###### <span style="color: #8B0000">Failure Scenario 1 - Network error</span>
 
 - <span style="color: #00008B">DoxHutEngine.startRoute</span> is called, then <span style="color: #A52A2A">NetworkErrorException</span> is thrown.
@@ -154,7 +154,7 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 
 #### <span style="color: #A52A2A">Flow</span>
 
-##### <span style="color: #8B0000">Success Scenario 1 - It is called DoxHutEngine.completeRoute with success</span>
+##### <span style="color: #8B0000">Success Scenario 1 - DoxHutEngine.completeRoute successfully called</span>
 
 **Requirements:**
 - The driver must have previously executed the <span style="color: #A52A2A">Arrive at Destination</span> method.
