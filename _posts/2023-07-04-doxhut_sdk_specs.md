@@ -28,7 +28,7 @@ Currently, <span style="color: #00008B">pepsico-ru</span> drivers utilize the <s
 
 Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, which will enable their <span style="color: #00008B">iSales</span> app to interact with specific endpoints on the <span style="color: #00008B">DoxHut API</span>.
 
-### <span style="color: #006400">DoxHut Driver Flow</span>
+### <span style="color: #006400">iSales App Flow</span>
 
 ![intro](/assets/images/images-sdk-driver-flow.png)
 
