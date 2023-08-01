@@ -36,16 +36,16 @@ Additionally, we will develop a <span style="color: #00008B">DoxHut SDK</span>, 
 
 ### <span style="color: #000000">Start Route</span>
 
-**Goal**
+#### <span style="color: #A52A2A">Goal</span>
 
 Start a route from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
-**Background and Strategic Fits**
+#### <span style="color: #A52A2A">Background and Strategic Fits</span>
 
 - On <span style="color: #00008B">pepsico-ru</span>, routes are currently initiated from the origin using the <span style="color: #00008B">iSales</span> app.
 - Currently, routes are imported from <span style="color: #A52A2A">ERP</span> into <span style="color: #00008B">iSales</span>.
 
-**Assumptions**
+#### <span style="color: #A52A2A">Assumptions</span>
 
 - Routes will be imported from <span style="color: #A52A2A">ERP</span> to <span style="color: #00008B">DoxHut</span>, containing all necessary information for successful loading on both the host app and <span style="color: #00008B">DoxHut Engine</span>.
 - System administrators will configure and maintain driver configurations, permissions, and route action restrictions on <span style="color: #00008B">DoxHut Live</span>.
@@ -114,16 +114,16 @@ As an <span style="color: #00008B">iSales</span> user from <span style="color: #
 
 ### <span style="color: #000000">Complete Route</span>
 
-**Goal**
+#### <span style="color: #A52A2A">Goal</span>
 
 - Complete routes from a host application on the <span style="color: #00008B">DoxHut Server</span> via the <span style="color: #00008B">DoxHut Engine</span>.
 
-**Background and Strategic Fits**
+#### <span style="color: #A52A2A">Background and Strategic Fits</span>
 
 - On <span style="color: #00008B">pepsico-ru</span> operation, routes are currently departed from the origin using the <span style="color: #00008B">iSales</span> app.
 - Currently, routes are imported from <span style="color: #A52A2A">ERP</span> into <span style="color: #00008B">iSales</span>.
 
-**Assumptions**
+#### <span style="color: #A52A2A">Assumptions</span>
 
 - Routes will be imported from <span style="color: #A52A2A">ERP</span> to <span style="color: #00008B">DoxHut</span>, containing all necessary information for successful loading on both the host app and <span style="color: #00008B">DoxHut Engine</span>.
 - System administrators will configure and maintain driver configurations, permissions, and route action restrictions on <span style="color: #00008B">DoxHut Live</span>.
