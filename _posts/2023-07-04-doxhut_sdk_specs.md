@@ -83,6 +83,7 @@ tags:
 - The route could not have been previously started.
 
 
+
 ###### <span style="color: #8B0000">Failure Scenario 1 - Network error</span>
 
 - <span style="color: #00008B">DoxHutEngine.startRoute</span> is called, then <span style="color: #A52A2A">NetworkErrorException</span> is thrown.
