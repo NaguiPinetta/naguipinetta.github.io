@@ -1,5 +1,5 @@
 ---
-title: DoxHut SDK Specs
+title: SDK Specs
 layout: post
 post-image: "https://i.ibb.co/cCFJXRF/sdk.png"
 description: Putting out fires with docs since 2017

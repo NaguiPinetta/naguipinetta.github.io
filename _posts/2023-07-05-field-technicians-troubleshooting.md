@@ -1,5 +1,5 @@
 ---
-title: Field Technicians Troubleshooting
+title: Troubleshooting
 layout: post
 post-image: "https://i.ibb.co/nQz3TTS/fieldtechnicianstroubleshooting.png"
 description: Crafting roadmaps for uncharted solutions

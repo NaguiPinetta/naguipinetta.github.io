@@ -1,5 +1,5 @@
 ---
-title: SREs FAQ
+title: FAQ
 layout: post
 post-image: "https://i.ibb.co/2yDYGJz/fatal-error.png"
 description: Putting out fires with docs since 2017

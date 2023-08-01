@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Changing a Router's Password 
+title: Tutorial
 layout: post
 post-image: "https://i.ibb.co/9p7XPrg/teste.png" 
 description: Crafting roadmaps for uncharted solutions

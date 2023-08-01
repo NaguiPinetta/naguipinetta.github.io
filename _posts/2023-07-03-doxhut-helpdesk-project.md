@@ -1,5 +1,5 @@
 ---
-title: Help Desk Project
+title: Project Docs
 layout: post
 post-image: "https://i.ibb.co/R2gh6Jb/falling-fire.png"
 description: Putting out fires with docs since 2017
