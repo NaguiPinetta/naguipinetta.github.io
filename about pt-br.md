@@ -1,5 +1,5 @@
 ---
-title: Sobre
+title: Sobre (pt-br)
 layout: page
 ---
 
