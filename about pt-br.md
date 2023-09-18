@@ -16,28 +16,28 @@ Acredito em fornecer resultados que realmente causem impacto, e meu histórico c
 ## Experiência Profissional
 
 ### **Descartes Systems Group**
-**Período:** 11/02/2021 - Atualmente
-**Cargo:** Redator Técnico
+**Período:** 11/02/2021 - Atualmente<br>
+**Cargo:** Redator Técnico<br>
 **Descrição:** Responsável por escrever documentação técnica voltada para o usuário final dos produtos de software da DSG, uma líder global em unir empresas no comércio, fornecendo soluções em nuvem para logística e cadeia de suprimentos.
 
 ### **Jüssi | The Business Agency**
-**Período:** 10/01/2022 - 04/01/2023
-**Cargos:** Redator de UX - Designer de UX - Redator
+**Período:** 10/01/2022 - 04/01/2023<br>
+**Cargos:** Redator de UX - Designer de UX - Redator<br>
 **Descrição:** Criei conteúdo escrito, desenvolvi e revisei textos publicitários, conduzi diversas atividades de pesquisa de usuário, elaborei estratégias de conteúdo e colaborei com designers de UX durante o processo de descoberta de produtos, visando aprimorar a plataforma web da Cirion Technologies.
 
 ### **Agot AI**
-**Período:** 01/10/2022 - 06/01/2022
-**Cargo:** Redator Técnico
+**Período:** 01/10/2022 - 06/01/2022<br>
+**Cargo:** Redator Técnico<br>
 **Descrição:** Criei e mantive a base de conhecimento da Agot.AI e redigi documentação para usuários finais, documentação técnica e de produtos, incluindo documentos de suporte, documentos de integração, manuais do funcionário e políticas de segurança da informação.
 
 ### **GreenMile Software Solutions**
-**Período:** 01/10/2022 - 06/01/2022
-**Cargos:** Product Owner - Analista de Negócios - Redator de UX
+**Período:** 01/10/2022 - 06/01/2022<br>
+**Cargos:** Product Owner - Analista de Negócios - Redator de UX<br>
 **Descrição:** Gerenciei equipes de desenvolvimento de software, garantindo que as soluções de software móvel e web da GreenMile atendessem às funcionalidades desejadas e às necessidades dos usuários. Também analisei sistemas de negócios, documentei requisitos, defini escopo e estabeleci objetivos para o sucesso do projeto.
 
 ### **GreenMile Software Solutions**
-**Período:** 01/10/2022 - 06/01/2022
-**Cargos:** Redator Técnico - Intérprete
+**Período:** 01/10/2022 - 06/01/2022<br>
+**Cargos:** Redator Técnico - Intérprete<br>
 **Descrição:** Criei uma base de conhecimento, redigi e gerenciei documentação técnica voltada para o usuário final da GreenMile Software Solutions, líder em fornecer soluções de software para a logística no Brasil. Também fui responsável pela localização da interface do usuário de aplicativos web e móveis.
 
 ## Expertise:
