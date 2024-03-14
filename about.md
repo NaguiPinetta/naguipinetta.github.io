@@ -29,7 +29,7 @@ I have developed expertise in several key areas, allowing me to contribute effec
 
 These areas of expertise have allowed me to contribute to the success of various projects, and I am eager to bring my skills to new challenges and make a positive impact.
 
-## Knowledge, Experience, Tools and Technologies I've work with
+## Knowledge, Experience, Tools and Technologies I've worked with
 
 
 <style>
@@ -76,7 +76,7 @@ These areas of expertise have allowed me to contribute to the success of various
 .tag:nth-child(29) { background-color: #ffc107; } /* Jira */
 .tag:nth-child(30) { background-color: #6f42c1; } /* Aha! */
 .tag:nth-child(31) { background-color: #fd7e14; } /* MS Office */
-.tag:nth-child(32) { background-color: #20c997; } /* Azure Devops */
+.tag:nth-child(32) { background-color: #20c997; } /* Azure DevOps */
 .tag:nth-child(33) { background-color: #e83e8c; } /* Confluence */
 .tag:nth-child(34) { background-color: #6c757d; } /* GitHub */
 .tag:nth-child(35) { background-color: #17a2b8; } /* GitPages */
@@ -122,7 +122,7 @@ These areas of expertise have allowed me to contribute to the success of various
 <span class="tag" style="background-color: #ffc107;">Jira</span>
 <span class="tag" style="background-color: #6f42c1;">Aha!</span>
 <span class="tag" style="background-color: #fd7e14;">MS Office</span>
-<span class="tag" style="background-color: #20c997;">Azure Devops</span>
+<span class="tag" style="background-color: #20c997;">Azure DevOps</span>
 <span class="tag" style="background-color: #e83e8c;">Confluence</span>
 <span class="tag" style="background-color: #6c757d;">GitHub</span>
 <span class="tag" style="background-color: #17a2b8;">GitPages</span>
