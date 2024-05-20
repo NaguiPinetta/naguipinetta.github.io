@@ -1,7 +1,7 @@
 ---
 title: FAQ
 layout: post
-post-image: "https://i.ibb.co/2yDYGJz/fatal-error.png"
+post-image: "\assets\images\sre-faq.png"
 description: Putting out fires with docs since 2017
 tags:
 - FAQ
