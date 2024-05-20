@@ -1,7 +1,7 @@
 ---
 title: FAQ
 layout: post
-post-image: "\assets\images\sre-faq.png"
+post-image: "https://iili.io/JiCh5eR.png"
 description: Putting out fires with docs since 2017
 tags:
 - FAQ
