@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 layout: post
-post-image: "https://i.ibb.co/nQz3TTS/fieldtechnicianstroubleshooting.png"
+post-image: "https://freeimage.host/i/sre-faq.JiChazN"
 description: Crafting roadmaps for uncharted solutions
 tags:
 - Troubleshooting

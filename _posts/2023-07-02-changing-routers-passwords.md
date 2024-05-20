@@ -1,7 +1,7 @@
 ---
 title: Tutorial
 layout: post
-post-image: "https://i.ibb.co/9p7XPrg/teste.png" 
+post-image: "https://freeimage.host/i/teste.JiChI0g" 
 description: Crafting roadmaps for uncharted solutions
 tags:
 - SRE Guides
