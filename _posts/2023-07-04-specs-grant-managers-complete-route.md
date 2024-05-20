@@ -1,7 +1,7 @@
 ---
 title: Tech Specs / User Stories
 layout: post
-post-image: 'https://i.ibb.co/L08F6kH/managers.png'
+post-image: "https://iili.io/JiCh7bp.png"
 description: Tailormade microcopy to suit up your apps
 tags:
   - Tech Specs

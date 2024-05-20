@@ -1,7 +1,7 @@
 ---
 title: Project Docs
 layout: post
-post-image: "https://i.ibb.co/R2gh6Jb/falling-fire.png"
+post-image: "https://iili.io/JiChAdJ.png"
 description: Putting out fires with docs since 2017
 tags:
 - Project Docs

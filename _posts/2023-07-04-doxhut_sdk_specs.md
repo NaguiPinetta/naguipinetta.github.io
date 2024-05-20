@@ -1,7 +1,7 @@
 ---
 title: SDK Specs
 layout: post
-post-image: "https://i.ibb.co/cCFJXRF/sdk.png"
+post-image: "https://iili.io/JiChR5v.png"
 description: Putting out fires with docs since 2017
 tags:
 - Business Requirements

@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 layout: post
-post-image: "https://freeimage.host/i/sre-faq.JiChazN"
+post-image: "https://iili.io/JiChazN.png"
 description: Crafting roadmaps for uncharted solutions
 tags:
 - Troubleshooting
